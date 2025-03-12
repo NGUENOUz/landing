@@ -55,7 +55,7 @@ export default function Home() {
      </section>
 
      <section className="modules">
-      <h1>Ce que vous allez apprendre</h1>
+      <h1>Ce que <span className="tips">vous</span> allez apprendre</h1>
 
       <div className="modules__content">
            <div className="partie1">
