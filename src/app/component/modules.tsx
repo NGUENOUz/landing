@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -18,7 +18,7 @@ export default function Modules() {
           className='panel'
         >
           <Typography component="span" className='titre__content'>
-            <span className='titre'>Module 1 : Les bases incontournables d'Excel</span>
+            <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
 
             <span className="time">
                 <AccessAlarmIcon/>
@@ -31,7 +31,7 @@ export default function Modules() {
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
             <ul>
-                <li>Les bases d'Excel</li>
+                <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
@@ -48,7 +48,7 @@ export default function Modules() {
           className='panel'
         >
           <Typography component="span" className='titre__content'>
-            <span className='titre'>Module 1 : Les bases incontournables d'Excel</span>
+            <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
 
             <span className="time">
                 <AccessAlarmIcon/>
@@ -61,7 +61,7 @@ export default function Modules() {
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
             <ul>
-                <li>Les bases d'Excel</li>
+                <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
@@ -78,7 +78,7 @@ export default function Modules() {
           className='panel'
         >
           <Typography component="span" className='titre__content'>
-            <span className='titre'>Module 1 : Les bases incontournables d'Excel</span>
+            <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
 
             <span className="time">
                 <AccessAlarmIcon/>
@@ -91,7 +91,7 @@ export default function Modules() {
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
             <ul>
-                <li>Les bases d'Excel</li>
+                <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
@@ -108,7 +108,7 @@ export default function Modules() {
           className='panel'
         >
           <Typography component="span" className='titre__content'>
-            <span className='titre'>Module 1 : Les bases incontournables d'Excel</span>
+            <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
 
             <span className="time">
                 <AccessAlarmIcon/>
@@ -121,7 +121,7 @@ export default function Modules() {
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
             <ul>
-                <li>Les bases d'Excel</li>
+                <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
@@ -138,7 +138,7 @@ export default function Modules() {
           className='panel'
         >
           <Typography component="span" className='titre__content'>
-            <span className='titre'>Module 1 : Les bases incontournables d'Excel</span>
+            <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
 
             <span className="time">
                 <AccessAlarmIcon/>
@@ -151,7 +151,7 @@ export default function Modules() {
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
             <ul>
-                <li>Les bases d'Excel</li>
+                <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>

@@ -49,7 +49,7 @@ export default function Home() {
 
         <p>2500 XAf seulement au lieux de </p>
         <span className="price">12 500 Xaf</span>
-        <button className="btn-grad">Je profite de l'offre</button>
+        <button className="btn-grad">Je profite de l&#39; offre</button>
         <span>Offre valable pour 24h</span>
         
      </section>
