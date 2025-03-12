@@ -2,7 +2,7 @@ import Image from "next/image";
 import '../style/layout.scss';
 import mockup from "../images/video.png";
 import logo from "../images/logoD.png";
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+
 
 export default function Home() {
   return (
