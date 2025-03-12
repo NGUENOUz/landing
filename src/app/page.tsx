@@ -2,6 +2,7 @@ import Image from "next/image";
 import '../style/layout.scss';
 import mockup from "../images/video.png";
 import logo from "../images/logoD.png";
+import Modules from "./component/modules";
 
 
 export default function Home() {
@@ -41,6 +42,32 @@ export default function Home() {
             <p>Vous êtes entrepreneurs et vous avez besoin de maitriser Excel pour votre entreprise ?</p>
           </div>
         </div>
+
+        <h1>
+          Profitez de cette offre unique dès maintenant !
+        </h1>
+
+        <p>2500 XAf seulement au lieux de </p>
+        <span className="price">12 500 Xaf</span>
+        <button className="btn-grad">Je profite de l'offre</button>
+        <span>Offre valable pour 24h</span>
+        
+     </section>
+
+     <section className="modules">
+      <h1>Ce que vous allez apprendre</h1>
+
+      <div className="modules__content">
+           <div className="partie1">
+            
+             <div className="modules__content__item">
+                <Modules/>
+             </div>
+        
+      </div>
+
+           <div className="partie2"></div>
+      </div>
      </section>
     </main>
   );

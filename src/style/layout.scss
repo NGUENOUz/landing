@@ -3,17 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+.tips{
+    background: linear-gradient(to right, #ecc40e, 
+    #ff6b08); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+.btn-grad {background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
 
 main{
     width: 100%;
     height: auto;
 
-    .tips{
-        background: linear-gradient(to right, #ecc40e, 
-        #ff6b08); 
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;
-    }
 
     header{
         width: 100%;
@@ -67,26 +90,6 @@ main{
                 width: 100%;
                 height: 40%;
             }
-         .btn-grad {background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-            border: none;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
          
            
             .video{
@@ -106,6 +109,9 @@ main{
     .cible{
         padding: 40px 30px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: #dfdbdb4b;
 
         h2{
@@ -118,6 +124,7 @@ main{
         .cible__content{
             padding: 10% 10%;
             display: flex;
+            
             flex-wrap: wrap;
             gap: 30px;
             justify-content: space-between;
@@ -142,12 +149,52 @@ main{
                 background-color: #ee8308;
                 backdrop-filter: blur(2000px); 
                 
-                p{color: white; padding-top: 10px;}
+               color: white;
             }
+
+           
+        }
+        
+        h1{
+            font-family: 'poppins', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        p{
+            font-family: 'poppins', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 32px;
+            text-decoration: line-through;
+            text-decoration-color: red;
         }
 
         
 
+    }
+
+    .modules{
+        padding: 40px 30px;
+        
+
+
+        .modules__content{
+            padding: 10% 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+
+            .partie1{
+                  
+            }
+            .partie2{
+
+            }
+        }
     }
     
 
@@ -162,6 +209,10 @@ main{
         }
         h1{
             font-size: 40px;
+        }
+
+        .video{
+            height: 60%;
         }
        }
 
