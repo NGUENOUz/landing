@@ -7,6 +7,7 @@ import logo from "../images/logoD.png";
 import felicitation from "../images/felicitation.gif"; 
 import Modules from "./component/modules";
 import PayCart from "./component/payCart";
+import Temoignage from "./component/temoignage";
 
 
 export default function Home() {
@@ -110,6 +111,10 @@ export default function Home() {
         <span>Je voulais juste te feciliter , car je suis sur que tu ne laissera pas cette offre unique te passer par la porte . alors n&apos;attend plus , passe à l&apos;action maintenant , et profite de la promo , d&apos;une formaton de qualité , d&apos;un accompagnement à vie pendant et après ta formations et obtiens bien d&apos;autres bonus </span>
         <Image src={felicitation}   alt="" className="felicit"/>
        </div>
+     </section>
+
+     <section className="temoins">
+       <Temoignage/>
      </section>
     </main>
   );

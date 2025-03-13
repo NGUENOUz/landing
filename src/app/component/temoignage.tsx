@@ -1,19 +1,44 @@
-import '@coreui/coreui/dist/css/coreui.min.css'
-import React from 'react'
-import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
+'use client';
 
-export const Temoignage = () => {
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+export default function Temoignage() { // Renommer le composant pour une meilleure clarté
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
+  };
+
   return (
-    <CCarousel controls transition="crossfade">
-      <CCarouselItem>
-        <CImage className="d-block w-100" src="../../images/react.jpg" alt="slide 1" />
-      </CCarouselItem>
-      <CCarouselItem>
-        <CImage className="d-block w-100" src="../../images/vue.jpg" alt="slide 2" />
-      </CCarouselItem>
-      <CCarouselItem>
-        <CImage className="d-block w-100" src="../../images/angular.jpg" alt="slide 3" />
-      </CCarouselItem>
-    </CCarousel>
-  )
+    <div className="slider-container">
+      <Slider {...settings} className="sliders">
+        <div className='temoignage__cart'>
+          
+        </div>
+        <div className='temoignage__cart'>
+          
+        </div>
+        <div className='temoignage__cart'>
+          
+        </div>
+        <div className='temoignage__cart'>
+          
+        </div>
+        <div className='temoignage__cart'>
+          
+        </div>
+        <div className='temoignage__cart'>
+          
+        </div>
+      </Slider>
+    </div>
+  );
 }
