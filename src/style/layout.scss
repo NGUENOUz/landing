@@ -237,15 +237,32 @@ main{
 
 
         .plus__content{
+
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
             justify-content: space-between;
-            width: 100%;
-            padding: 10% 10%;
+            padding: 10% 20%;
+            align-items: center;
+           
+            
+           
+           
+            
              
             .plus__picture{
-              
+
+              .UserPic{
+                margin-top: -20%;
+                width: 170%;
+                height: auto;
+              }
+            }
+
+            .plus__description{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
             }
 
         }
@@ -323,12 +340,38 @@ main{
     }
 
     .plus{
-        padding: 10% 10%;
-        display: flex;
-        flex-direction: column;
+        
+        padding: 0% 0%;
+        width: 100%;
+        
+        .plus__content{
+            display: flex;
+            padding: 20 % 2%;
+           flex-direction: column-reverse;
+          align-items: center;
+       
+         
+
+        .plus__picture{
+            .UserPic{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .plus__description{
+            padding: O;
+            background: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente */
+            border-radius: 10px; /* Bords arrondis (facultatif) */
+            box-shadow: 0 4px 6px rgba(151, 150, 150, 0.1); /* Ombre légère (facultatif) */
+            backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
+            -webkit-backdrop-filter: blur(10px); /* Pour la compatibilité avec Safari */
+            padding: 20px; /* Espacement intérieur (facultatif) */
+           
+        }
     }
     
   }
 
  
-}
+}}

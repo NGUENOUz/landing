@@ -2,6 +2,7 @@
 import Image from "next/image";
 import '../style/layout.scss';
 import mockup from "../images/video.png";
+import User from "../images/User.png";
 import logo from "../images/logoD.png";
 import Modules from "./component/modules";
 import PayCart from "./component/payCart";
@@ -81,16 +82,24 @@ export default function Home() {
      <h1>Rien à perdre mais tout  <span className="tips">à gagner</span> </h1>
 
      <div className="plus__content">
-      <div className="plus__picture"></div>
+    
+
       <div className="plus__description">
-        <p></p>
-        <p></p>
+        <p>Ne ne vous offrons pas seulement la formation !</p>
+        <p>En plus de la formation , vous aurez egalement accès à un groupe whatsapp privée des personnes passionner par les nouvelles technologies , avec qui vous poriez echangier par rapport aux difficulter que vous recntrer dans la mise en proatques des connaissances partager dans la formation , et pas seulement </p>
+        <p>Vous aurez egalement droit à plus de 1000 livres audios qui traites des sujets utilies sur </p>
         <button className="btn-grad">
           Profiter de l&apos;offre
         </button>
-
+     
         <span>Offre valable 24h</span>
      </div>
+
+     <div className="plus__picture">
+        <Image src={User} alt="previewPic" className="UserPic"/>
+      </div>
+
+     
      </div>
      </section>
     </main>
