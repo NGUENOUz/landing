@@ -68,12 +68,30 @@ export default function Home() {
                 <div className="payCartMobile">
                         <Image src={mockup} alt="preview" className="preview" />
                         <h2>Formation 100% pratique</h2>
-                        <p>Voici un apperçu du contenu de cette formation qu'il vous faut !!!</p>
+                        <p>Voici un apperçu du contenu de cette formation qu&apos;il vous faut !!!</p>
                         <p>Ne manquez pas cette opportunité de vous faire former dans Excel</p>
-                        <button className="btn-grad">Je profite de l'offre</button>
+                        <button className="btn-grad">Je profite de l&apos;offre</button>
                  </div>
                 
       </div>
+     </section>
+
+
+     <section className="plus">
+     <h1>Rien à perdre mais tout  <span className="tips">à gagner</span> </h1>
+
+     <div className="plus__content">
+      <div className="plus__picture"></div>
+      <div className="plus__description">
+        <p></p>
+        <p></p>
+        <button className="btn-grad">
+          Profiter de l&apos;offre
+        </button>
+
+        <span>Offre valable 24h</span>
+     </div>
+     </div>
      </section>
     </main>
   );

@@ -38,9 +38,9 @@ export default function PayCart() {
       <div className={`payCart ${isFixed ? 'fixed' : 'nonFixe'}`} ref={payCartRef}>
         <Image src={mockup} alt="preview" className="preview" />
         <h2>Formation 100% pratique</h2>
-        <p>Voici un apperçu du contenu de cette formation qu'il vous faut !!!</p>
+        <p>Voici un apperçu du contenu de cette formation qu&apos;il vous faut !!!</p>
         <p>Ne manquez pas cette opportunité de vous faire former dans Excel</p>
-        <button className="btn-grad">Je profite de l'offre</button>
+        <button className="btn-grad">Je profite de l&apos;offre</button>
       </div>
     </div>
   );

@@ -219,13 +219,44 @@ main{
 
         }
     }
+
+    .plus{
+        padding: 10% 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        h1{
+            font-size: 48px;
+            text-align: center;
+                font-weight: bold;
+                font-family: 'latobold', sans-serif;
+            
+        }
+
+
+        .plus__content{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10% 10%;
+             
+            .plus__picture{
+              
+            }
+
+        }
+    }
     
 
 }
 
 @media (max-width:480px){
-    main{
-       .Acceuil{
+main{
+    .Acceuil{
         h2{
             font-size: 14px; 
             display: none;   
@@ -239,7 +270,7 @@ main{
         }
        }
 
-       .cible{
+    .cible{
         padding: 40px 30px;
 
         .cible__content{
@@ -273,23 +304,31 @@ main{
         }
     }
 
+
+    .payCartMobile{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: #f07807;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    
+        .preview{
+            width: 96%;
+        }
+                
+    }
+
+    .plus{
+        padding: 10% 10%;
+        display: flex;
+        flex-direction: column;
+    }
     
   }
 
- .payCartMobile{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #f07807;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-
-    .preview{
-        width: 96%;
-    }
-            
-}
+ 
 }
