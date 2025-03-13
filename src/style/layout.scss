@@ -267,6 +267,38 @@ main{
 
         }
     }
+
+    .felicitation{
+        padding: 10% 10%;
+
+        h1{
+            font-size: 48px;
+            text-align: center;
+                font-weight: bold;
+                font-family: 'latobold', sans-serif;
+            
+        }
+
+        .felicitaion__container{
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+              gap: 10px; 
+              padding-top: 5%;
+              text-align: center;
+
+              span{
+                padding: 0% 20%;
+                font-size: 24px;
+              }
+
+              .felicit{
+                width: 80%;
+              }
+        }
+
+
+    }
     
 
 }
@@ -372,6 +404,20 @@ main{
         }
     }
     
+  }
+
+  .felicitation{
+
+    .felicitaion__container{
+        span{
+            padding: 0;
+            font-size: 16px;
+        }
+        .felicit{
+            height: 80%;
+        }
+    }
+
   }
 
  

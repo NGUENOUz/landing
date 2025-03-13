@@ -4,6 +4,7 @@ import '../style/layout.scss';
 import mockup from "../images/video.png";
 import User from "../images/User.png";
 import logo from "../images/logoD.png";
+import felicitation from "../images/felicitation.gif"; 
 import Modules from "./component/modules";
 import PayCart from "./component/payCart";
 
@@ -101,6 +102,14 @@ export default function Home() {
 
      
      </div>
+     </section>
+
+     <section className="felicitation">
+      <h1>Un mot de plus <span className="tips">pour toi</span> ! </h1>
+       <div className="felicitaion__container">
+        <span>Je voulais juste te feciliter , car je suis sur que tu ne laissera pas cette offre unique te passer par la porte . alors n&apos;attend plus , passe à l&apos;action maintenant , et profite de la promo , d&apos;une formaton de qualité , d&apos;un accompagnement à vie pendant et après ta formations et obtiens bien d&apos;autres bonus </span>
+        <Image src={felicitation}   alt="" className="felicit"/>
+       </div>
      </section>
     </main>
   );
