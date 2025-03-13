@@ -43,3 +43,42 @@
         color: #777373;
     }
 }
+
+.module__Group{
+    width: 50%;
+}
+
+
+  
+.payCart {
+    /* Vos styles existants */
+    transition: all 0.3s ease; /* Ajout d'une transition pour un effet plus doux */
+  }
+  
+  .payCart.fixed {
+    position: fixed;
+    right: 10%;
+    top: 10px; /* Ajustez la position selon vos besoins */
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+    /* Ajoutez d'autres styles pour l'état fixe */
+  }
+
+  .nonFixe{
+    display: none;
+  }
+
+
+  @media (max-width: 480px) {
+
+    .modules__content{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+    }
+    .fixed{
+        display: none;
+    }
+   .nonFixe{
+   display: none;
+   }
+  }

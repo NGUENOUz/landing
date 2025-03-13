@@ -9,6 +9,18 @@
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
 }
+.payCartMobile{
+                
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #f07807;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: none;
+    
+}
 .btn-grad {background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%)}
 .btn-grad {
    margin: 10px;
@@ -176,9 +188,9 @@ main{
     }
 
     .modules{
-        padding: 10% 10%;
 
         h1{
+            padding-top: 3%;
             text-align: center;
             font-size: 48px;
                 font-weight: bold;
@@ -189,25 +201,29 @@ main{
 
 
         .modules__content{
-            padding: 10% 15%;
+            padding: 10% 8%;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: space-between;
 
-            .partie1{
-                  
+            .payCart{
+                padding: 10px 20px;
+                border-radius: 10px;
+                background: #f07807;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
             }
-            .partie2{
 
-            }
         }
     }
     
 
 }
 
-@media (max-width:400px){
+@media (max-width:480px){
     main{
        .Acceuil{
         h2{
@@ -247,5 +263,33 @@ main{
            
        }
     }
+
+    .module__Group{
+        width: 100%;
+       
+       
+        .panels{
+            width: 100%;
+        }
+    }
+
+    
   }
+
+ .payCartMobile{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #f07807;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+    .preview{
+        width: 96%;
+    }
+            
+}
 }

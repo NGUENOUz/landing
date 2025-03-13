@@ -9,7 +9,7 @@ import '../../style/modules.scss';
 
 export default function Modules() {
   return (
-    <div>
+    <div className='module__Group'>
       <Accordion defaultExpanded className='panels'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

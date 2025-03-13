@@ -1,8 +1,10 @@
+
 import Image from "next/image";
 import '../style/layout.scss';
 import mockup from "../images/video.png";
 import logo from "../images/logoD.png";
 import Modules from "./component/modules";
+import PayCart from "./component/payCart";
 
 
 export default function Home() {
@@ -58,15 +60,19 @@ export default function Home() {
       <h1>Ce que <span className="tips">vous</span> allez apprendre</h1>
 
       <div className="modules__content">
-           <div className="partie1">
-            
-             <div className="modules__content__item">
+          
                 <Modules/>
-             </div>
-        
-      </div>
 
-           <div className="partie2"></div>
+                <PayCart/>
+
+                <div className="payCartMobile">
+                        <Image src={mockup} alt="preview" className="preview" />
+                        <h2>Formation 100% pratique</h2>
+                        <p>Voici un apperçu du contenu de cette formation qu'il vous faut !!!</p>
+                        <p>Ne manquez pas cette opportunité de vous faire former dans Excel</p>
+                        <button className="btn-grad">Je profite de l'offre</button>
+                 </div>
+                
       </div>
      </section>
     </main>
