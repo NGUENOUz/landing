@@ -16,8 +16,8 @@ export default function PayCart() {
       const payCartRect = payCartRef.current.getBoundingClientRect();
 
       if (
-        payCartRect.top >= modulesContentRect.top &&
-        payCartRect.bottom <= modulesContentRect.bottom
+        (payCartRect.top)+250 >= (modulesContentRect.top )-100&&
+       ( payCartRect.bottom) +300<= (modulesContentRect.bottom)-130
       ) {
         setIsFixed(true);
       } else {

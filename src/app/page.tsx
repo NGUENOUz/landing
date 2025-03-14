@@ -8,6 +8,7 @@ import felicitation from "../images/felicitation.gif";
 import Modules from "./component/modules";
 import PayCart from "./component/payCart";
 import Temoignage from "./component/temoignage";
+import Faq from "./component/faq";
 
 
 export default function Home() {
@@ -85,7 +86,9 @@ export default function Home() {
 
      <div className="plus__content">
     
-
+     <div className="plus__picture">
+        <Image src={User} alt="previewPic" className="UserPic"/>
+      </div>
       <div className="plus__description">
         <p>Ne ne vous offrons pas seulement la formation !</p>
         <p>En plus de la formation , vous aurez egalement accès à un groupe whatsapp privée des personnes passionner par les nouvelles technologies , avec qui vous poriez echangier par rapport aux difficulter que vous recntrer dans la mise en proatques des connaissances partager dans la formation , et pas seulement </p>
@@ -97,9 +100,7 @@ export default function Home() {
         <span>Offre valable 24h</span>
      </div>
 
-     <div className="plus__picture">
-        <Image src={User} alt="previewPic" className="UserPic"/>
-      </div>
+     
 
      
      </div>
@@ -115,6 +116,22 @@ export default function Home() {
 
      <section className="temoins">
        <Temoignage/>
+     </section>
+
+     <section className="faq">
+      <h1>Les <span className="tips">questions</span> les plus courantes</h1>
+      <Faq/>
+     </section>
+
+     <section className="footer">
+     <div className="footer_content">
+          <h1>
+          © 2025 Dreno
+          </h1>
+          <p>Tous droits réservés. | Mentions légales | Politique de confidentialité | Ce site n est pas affilié à Microsoft ou Facebook.</p>
+        </div>
+        <Image src={logo} alt="logo" className="logo"/>
+
      </section>
     </main>
   );
