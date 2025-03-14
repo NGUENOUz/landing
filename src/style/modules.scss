@@ -89,6 +89,43 @@
   }
 
 
+  .notifications{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out; // Ajout de la transition
+    opacity: 1; // Ajout d'une opacité par défaut
+    transform: translateY(0);
+    animation: fade 40s ease-in-out infinite;
+
+    .flag {
+      width: 30px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
 
   @media (max-width: 480px) {
 

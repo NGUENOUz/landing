@@ -3,7 +3,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../../style/modules.scss';
 
@@ -13,7 +12,7 @@ export default function Faq() {
     <div className='faq__Group'>
       <Accordion defaultExpanded className='panels'>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon/>}
           aria-controls="panel1-content"
           id="panel1-header"
           className='panel'

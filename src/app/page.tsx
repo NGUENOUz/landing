@@ -9,6 +9,7 @@ import Modules from "./component/modules";
 import PayCart from "./component/payCart";
 import Temoignage from "./component/temoignage";
 import Faq from "./component/faq";
+import Notifications from "./component/notification";
 
 
 export default function Home() {
@@ -121,6 +122,11 @@ export default function Home() {
      <section className="faq">
       <h1>Les <span className="tips">questions</span> les plus courantes</h1>
       <Faq/>
+     </section>
+
+
+     <section className="notif">
+          <Notifications/>
      </section>
 
      <section className="footer">
