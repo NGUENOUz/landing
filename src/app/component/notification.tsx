@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import '../../style/modules.scss';
 import { StaticImageData } from 'next/image';
@@ -35,7 +36,7 @@ export default function Notifications() {
     if (!currentTestimonial) return null;
   return (
     <div className="notifications">
-      <img
+      <Image
         src={currentTestimonial.flag.src} // Utilisation de currentTestimonial.flag.src
         alt={`${currentTestimonial.country} flag`}
         className="flag"/>
