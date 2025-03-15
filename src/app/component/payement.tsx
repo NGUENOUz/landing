@@ -26,7 +26,7 @@ export default function PaymentForm() {
     setLoading(true);
     setError('');
 
-    const AMOUNT = 1500;
+    const AMOUNT = 30000;
     const SHOP_NAME = 'Votre Boutique';
     const MESSAGE = 'Contactez-nous sur WA pour toutes vos questions';
     const SUCCESS_URL = 'https://www.youtube.com/results?search_query=cors+extension+chrome';
