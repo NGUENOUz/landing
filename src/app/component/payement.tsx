@@ -26,9 +26,9 @@ export default function PaymentForm() {
     setLoading(true);
     setError('');
 
-    const AMOUNT = 20660;
-    const SHOP_NAME = 'Votre Boutique';
-    const MESSAGE = 'Contactez-nous sur WA pour toutes vos questions';
+    const AMOUNT = 1500;
+    const SHOP_NAME = 'Dreno/Formation Excel';
+    const MESSAGE = 'Achat effectuer avec succes';
     const SUCCESS_URL = 'https://www.linkedin.com/in/wilfrieddzomeu/';
     const FAILURE_URL = 'https://nextjs.org/docs';
     const ORDER_ID = uuidv4();
