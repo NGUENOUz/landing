@@ -1,4 +1,4 @@
-
+'use client';
 import Image from "next/image";
 import '../style/layout.scss';
 import mockup from "../images/video.png";
@@ -23,7 +23,7 @@ export default function Home() {
         <h2>Ne laisser plus la peurs de la manipulation des données vous tourmenter ! </h2>
         <h1>Devenez <span className="tips">Expert</span> Dans <span className="tips">Excel</span></h1>
         <h3>Grace à cette formation 100% pratique accéssible par tous </h3>
-        <Image src={mockup} alt="logo"  className="video"/>
+        <Image src={mockup} alt="logo"  className="video" width={0} height={0}/>
         
         <button className="btn-grad">Commencer</button>
         
@@ -71,7 +71,7 @@ export default function Home() {
                 <PayCart/>
 
                 <div className="payCartMobile">
-                        <Image src={mockup} alt="preview" className="preview" />
+                        <Image src={mockup} alt="preview" className="preview" width={0} height={0}/>
                         <h2>Formation 100% pratique</h2>
                         <p>Voici un apperçu du contenu de cette formation qu&apos;il vous faut !!!</p>
                         <p>Ne manquez pas cette opportunité de vous faire former dans Excel</p>
@@ -88,7 +88,7 @@ export default function Home() {
      <div className="plus__content">
     
      <div className="plus__picture">
-        <Image src={User} alt="previewPic" className="UserPic"/>
+        <Image src={User} alt="previewPic" className="UserPic" width={0} height={0}/>
       </div>
       <div className="plus__description">
         <p>Ne ne vous offrons pas seulement la formation !</p>
@@ -111,7 +111,7 @@ export default function Home() {
       <h1>Un mot de plus <span className="tips">pour toi</span> ! </h1>
        <div className="felicitaion__container">
         <span>Je voulais juste te feciliter , car je suis sur que tu ne laissera pas cette offre unique te passer par la porte . alors n&apos;attend plus , passe à l&apos;action maintenant , et profite de la promo , d&apos;une formaton de qualité , d&apos;un accompagnement à vie pendant et après ta formations et obtiens bien d&apos;autres bonus </span>
-        <Image src={felicitation}   alt="" className="felicit"/>
+        <Image src={felicitation}   alt="" className="felicit" width={0} height={0}/>
        </div>
      </section>
 
@@ -136,7 +136,7 @@ export default function Home() {
           </h1>
           <p>Tous droits réservés. | Mentions légales | Politique de confidentialité | Ce site n est pas affilié à Microsoft ou Facebook.</p>
         </div>
-        <Image src={logo} alt="logo" className="logo"/>
+        <Image src={logo} alt="logo" className="logo" width={0} height={0}/>
 
      </section>
     </main>

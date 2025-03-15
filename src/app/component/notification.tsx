@@ -37,6 +37,7 @@ export default function Notifications() {
   return (
     <div className="notifications">
       <Image
+     width={0} height={0}
         src={currentTestimonial.flag.src} // Utilisation de currentTestimonial.flag.src
         alt={`${currentTestimonial.country} flag`}
         className="flag"/>

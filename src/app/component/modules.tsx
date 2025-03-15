@@ -1,4 +1,4 @@
-
+'use client';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -30,12 +30,12 @@ export default function Modules() {
         <AccordionDetails>
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
-            <ul>
+            
                 <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
-            </ul>    
+            
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -60,12 +60,12 @@ export default function Modules() {
         <AccordionDetails>
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
-            <ul>
+            
                 <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
-            </ul>    
+            
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -90,12 +90,12 @@ export default function Modules() {
         <AccordionDetails>
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
-            <ul>
+            
                 <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
-            </ul>    
+               
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -120,12 +120,12 @@ export default function Modules() {
         <AccordionDetails>
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
-            <ul>
+           
                 <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
-            </ul>    
+             
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -150,12 +150,12 @@ export default function Modules() {
         <AccordionDetails>
           <Typography className='module__description'>
           <span>Dans ce module , vous allez apprendre : </span>
-            <ul>
+            
                 <li>Les bases d&#39;Excel</li>
                 <li>Les formules de base</li>
                 <li>Les raccourcis clavier</li>
                 <li>Les astuces pour gagner du temps</li>
-            </ul>    
+               
           </Typography>
         </AccordionDetails>
       </Accordion>
