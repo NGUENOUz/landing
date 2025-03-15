@@ -9,6 +9,7 @@ import Modules from "./component/modules";
 import PayCart from "./component/payCart";
 import Temoignage from "./component/temoignage";
 import Faq from "./component/faq";
+import Link from 'next/link';
 import Notifications from "./component/notification";
 
 
@@ -25,7 +26,9 @@ export default function Home() {
         <h3>Grace à cette formation 100% pratique accéssible par tous </h3>
         <Image src={mockup} alt="logo"  className="video" width={0} height={0}/>
         
+        <Link href="/payement">
         <button className="btn-grad">Commencer</button>
+        </Link>
         
       </section>
 

@@ -23,7 +23,7 @@
     display: none;
     
 }
-.btn-grad {background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%)}
+.btn-grad {background-image: linear-gradient(to right, #eca20e80 0%, #f83600  51%, #eb7d0f7a  100%)}
 .btn-grad {
    margin: 10px;
    padding: 15px 45px;
@@ -36,18 +36,20 @@
    border-radius: 10px;
    display: block;
    border: none;
-   animation-name: animate;
-   animation-duration: infinite;
-   animation-delay: 2s;
-   animation: animate infinite all 2s;
+cursor: pointer;
+   animation: gradientAnimation 2s linear infinite;
  }
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
-
+ @keyframes gradientAnimation {
+    0% {
+      background-position: 0% center;
+      transform: translateX(0);
+    }
+    100% {
+      background-position: 200% center;
+      transform: translateX(10px);
+    }
+  }
 
 
 main{
@@ -89,7 +91,7 @@ main{
                 font-size: 24px;
                 color: #131212;
                 // font-family: 'Poppins', sans-serif;
-                font-family:"Anton",sans-serif;
+                font-family:"poppins",sans-serif;
                 margin-bottom: 10px;
                 text-align: center;
                 
@@ -243,7 +245,7 @@ main{
             font-size: 48px;
             text-align: center;
                 font-weight: bold;
-                font-family: 'latobold', sans-serif;
+                font-family:"Anton",sans-serif;
             
         }
 
@@ -489,6 +491,9 @@ main{
 
   .felicitation{
 
+    h1{
+        font-family:"Anton",sans-serif;
+    }
     .felicitaion__container{
         span{
             padding: 0;
