@@ -1,4 +1,4 @@
-// pages/api/lygosProxy.ts
+// src/app/api/lygosProxy.ts
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 
@@ -13,10 +13,10 @@ export default async function handler(
 ) {
   if (req.method === 'POST') {
     try {
-      const response = await fetch('https://api.lygosapp.com/v1/', {
+      const response = await fetch('https://api.lygosapp.com/v1/gateway', {
         method: 'POST',
         headers: {
-          'api-key': 'lygosapp-cd79b88c-1318-4e88-abff-804a77da140d',
+          'api-key': 'VOTRE-API-KEY',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(req.body),
@@ -28,9 +28,14 @@ export default async function handler(
 
       const data = await response.json();
       res.status(200).json(data);
-    } catch (error: any) {
-      console.error('Error proxying request:', error);
-      res.status(500).json({ error: 'Proxy error' });
+    } catch (error: unknown) { // Utilisation de 'unknown'
+      if (error instanceof Error) {
+        console.error('Error proxying request:', error.message);
+        res.status(500).json({ error: error.message });
+      } else {
+        console.error('Unknown error proxying request:', error);
+        res.status(500).json({ error: 'Unknown proxy error' });
+      }
     }
   } else {
     res.status(405).end(); // Method Not Allowed

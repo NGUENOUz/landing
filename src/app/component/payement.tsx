@@ -3,7 +3,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import '../../style/payement.scss';// Assurez-vous de créer ce fichier
+import '../../style/payement.scss';
+
+interface PaymentPayload {
+  amount: number;
+  shop_name: string;
+  message: string;
+  success_url: string;
+  failure_url: string;
+  order_id: string;
+}
 
 export default function PaymentForm() {
   const [fullName, setFullName] = useState('');
@@ -17,15 +26,14 @@ export default function PaymentForm() {
     setLoading(true);
     setError('');
 
-    const AMOUNT = 20000;
+    const AMOUNT = 200;
     const SHOP_NAME = 'Votre Boutique';
     const MESSAGE = 'Contactez-nous sur WA pour toutes vos questions';
     const SUCCESS_URL = 'https://www.linkedin.com/in/wilfrieddzomeu/';
     const FAILURE_URL = 'https://nextjs.org/docs';
     const ORDER_ID = uuidv4();
 
-    const url = 'https://api.lygosapp.com/v1/gateway';
-    const payload = {
+    const payload: PaymentPayload = {
       amount: AMOUNT,
       shop_name: SHOP_NAME,
       message: MESSAGE,
@@ -33,16 +41,16 @@ export default function PaymentForm() {
       failure_url: FAILURE_URL,
       order_id: ORDER_ID,
     };
-    const headers = {
-      'api-key': 'lygosapp-cd79b88c-1318-4e88-abff-804a77da140d', // Remplacez par votre clé API
-      'Content-Type': 'application/json',
-    };
 
     try {
-      const response = await axios.post(url, payload, { headers });
-      window.location.href = response.data.link; // Redirection vers Lygos
-    } catch (err: any) {
-      setError(err.message || 'Une erreur est survenue lors du paiement.');
+      const response = await axios.post('/api/lygosProxy', payload);
+      window.location.href = response.data.link;
+    } catch (err: unknown) { // Utilisation de 'unknown'
+      if (err instanceof Error) {
+        setError(err.message || 'Une erreur est survenue lors du paiement.');
+      } else {
+        setError('Une erreur inconnue est survenue lors du paiement.');
+      }
     } finally {
       setLoading(false);
     }
