@@ -1,5 +1,3 @@
-// pages/api/lygosProxy.ts
-
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type Data = {
@@ -28,9 +26,14 @@ export default async function handler(
 
       const data = await response.json();
       res.status(200).json(data);
-    } catch (error: any) {
-      console.error('Error proxying request:', error);
-      res.status(500).json({ error: 'Proxy error' });
+    } catch (error: unknown) { // Utilisation de 'unknown'
+      if (error instanceof Error) {
+        console.error('Error proxying request:', error.message);
+        res.status(500).json({ error: error.message });
+      } else {
+        console.error('Unknown error proxying request:', error);
+        res.status(500).json({ error: 'Unknown proxy error' });
+      }
     }
   } else {
     res.status(405).end(); // Method Not Allowed

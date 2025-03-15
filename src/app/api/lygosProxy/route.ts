@@ -1,4 +1,4 @@
-// app/api/lygosProxy/route.ts
+// src/app/api/lygosProxy/route.ts
 
 export async function POST(req: Request) {
     try {
@@ -18,8 +18,13 @@ export async function POST(req: Request) {
   
       const data = await response.json();
       return Response.json(data);
-    } catch (error: any) {
-      console.error('Error proxying request:', error);
-      return Response.json({ error: 'Proxy error' }, { status: 500 });
+    } catch (error: unknown) { // Utilisation de 'unknown'
+      if (error instanceof Error) {
+        console.error('Error proxying request:', error.message);
+        return Response.json({ error: error.message }, { status: 500 });
+      } else {
+        console.error('Unknown error proxying request:', error);
+        return Response.json({ error: 'Unknown proxy error' }, { status: 500 });
+      }
     }
   }

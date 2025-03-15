@@ -43,15 +43,18 @@ export default function PaymentForm() {
     };
 
     try {
-      const response = await axios.post('/api/lygosProxy', payload); // Utilisation de l'API route
+      const response = await axios.post('/api/lygosProxy', payload);
       window.location.href = response.data.link;
-    } catch (err: any) {
-      setError(err.message || 'Une erreur est survenue lors du paiement.');
+    } catch (err: unknown) { // Utilisation de 'unknown'
+      if (err instanceof Error) {
+        setError(err.message || 'Une erreur est survenue lors du paiement.');
+      } else {
+        setError('Une erreur inconnue est survenue lors du paiement.');
+      }
     } finally {
       setLoading(false);
     }
   };
-
   return (
     <div className="paymentForm">
       <h2>Informations de paiement</h2>
