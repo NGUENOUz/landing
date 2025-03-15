@@ -6,7 +6,7 @@ export async function POST(req: Request) {
     const response = await fetch('https://api.lygosapp.com/v1/gateway', {
       method: 'POST',
       headers: {
-        'api-key': 'VOTRE-API-KEY',
+        'api-key': 'lygosapp-cd79b88c-1318-4e88-abff-804a77da140d',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
