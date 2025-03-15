@@ -26,7 +26,7 @@ export default function PaymentForm() {
     setLoading(true);
     setError('');
 
-    const AMOUNT = 200;
+    const AMOUNT = 1000;
     const SHOP_NAME = 'Votre Boutique';
     const MESSAGE = 'Contactez-nous sur WA pour toutes vos questions';
     const SUCCESS_URL = 'https://www.linkedin.com/in/wilfrieddzomeu/';
