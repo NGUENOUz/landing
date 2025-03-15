@@ -49,9 +49,13 @@ export default function PaymentForm() {
 
     try {
       const response = await axios.post(url, payload, { headers });
-      window.location.href = response.data.link; // Redirection vers Lygos
-    } catch (err: any) {
-      setError(err.message || 'Une erreur est survenue lors du paiement.');
+      window.location.href = response.data.link;
+    } catch (err: unknown) { // Correction ici
+      if (err instanceof Error) {
+        setError(err.message || 'Une erreur est survenue lors du paiement.');
+      } else {
+        setError('Une erreur inconnue est survenue lors du paiement.');
+      }
     } finally {
       setLoading(false);
     }
