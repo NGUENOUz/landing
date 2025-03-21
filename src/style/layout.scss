@@ -533,6 +533,13 @@ main{
         }
        }
 
+     .demo{
+        .atout{
+            display: flex;
+            flex-direction: column;
+        }
+     }  
+
     .cible{
         padding: 40px 30px;
 
