@@ -1,17 +1,17 @@
 'use client';
 import Image from "next/image";
 import '../style/layout.scss';
-import mockup from "../images/video.png";
-import User from "../images/User.png";
+// import mockup from "../images/video.png";
+// import User from "../images/User.png";
 import logo from "../images/logoo.png";
-import felicitation from "../images/felicitation.gif"; 
-import Modules from "./component/modules";
-import PayCart from "./component/payCart";
-import Temoignage from "./component/temoignage";
-import Faq from "./component/faq";
+// import felicitation from "../images/felicitation.gif"; 
+// import Modules from "./component/modules";
+// import PayCart from "./component/payCart";
+// import Temoignage from "./component/temoignage";
+// import Faq from "./component/faq";
 import Link from 'next/link';
 import Notifications from "./component/notification";
-import BtnPay from "./component/payement";
+// import BtnPay from "./component/payement";
 import Book from "../images/book.png"
 import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -49,7 +49,7 @@ export default function Home() {
         <span className="sous__title"><span className="asterice">*</span>Formation 100% pratique<span className="asterice">*</span></span>
 
         <h1>
-            Devenez <span className="tips">un expert </span>en Creation d'application <span className="tips">No-code</span> sans apprendre du code
+            Devenez <span className="tips">un expert </span>en Creation d&#39;application <span className="tips">No-code</span> sans apprendre du code
         </h1>
 
         <div className="btn__container">
