@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import '../../style/multislide.scss'
 
 interface MultislideProps {
@@ -13,18 +13,19 @@ const Multislide: React.FC<MultislideProps> = ({ topSliderImages, bottomSliderIm
   return (
     <div className="slider-container">
       {/* Slider du haut */}
+      
       <div className="slider">
         <div className="slide-track">
           {/* Premier groupe de slides */}
           {topSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`top-slide-${index}`}>
-              <Image src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
+              <img src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" width={100} height={100}/>
             </div>
           ))}
           {/* Deuxième groupe de slides pour l'effet infini */}
           {topSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`top-slide-duplicate-${index}`}>
-              <Image src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" />
+              <img src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" width={100} height={100} />
             </div>
           ))}
         </div>
@@ -36,13 +37,13 @@ const Multislide: React.FC<MultislideProps> = ({ topSliderImages, bottomSliderIm
           {/* Premier groupe de slides */}
           {bottomSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`bottom-slide-${index}`}>
-              <Image src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
+              <img src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" width={100} height={100}/>
             </div>
           ))}
           {/* Deuxième groupe de slides pour l'effet infini */}
           {bottomSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`bottom-slide-duplicate-${index}`}>
-              <Image src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy"  />
+              <img src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" width={100} height={100} />
             </div>
           ))}
         </div>
