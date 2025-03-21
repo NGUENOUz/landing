@@ -18,13 +18,36 @@ button{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eeeeee34;
+    box-shadow: 0 0 20px #eeeeee28;
     border-radius: 10px;
     display: block;
     border: none;
  cursor: pointer;
  display: flex;
  align-items: center;
+
+
+ 
+ .btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
+ .btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
 
  .icon{
     color: rgba(228, 222, 222, 0.76);
@@ -513,11 +536,21 @@ main{
             button{
                 padding: 5px 10px;
             }
+
+            display: none;
         }
 
         .acceuil__container{
             h1{
-                font-size: 32px;
+                font-size: 24px;
+            }
+
+            .btn__container{
+              
+
+                .btn2{
+                    display: none;
+                }
             }
         }
         h2{
