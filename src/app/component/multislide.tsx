@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import '../../style/multislide.scss'
 
 interface MultislideProps {
@@ -17,13 +18,13 @@ const Multislide: React.FC<MultislideProps> = ({ topSliderImages, bottomSliderIm
           {/* Premier groupe de slides */}
           {topSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`top-slide-${index}`}>
-              <img src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
+              <Image src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
             </div>
           ))}
           {/* Deuxième groupe de slides pour l'effet infini */}
           {topSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`top-slide-duplicate-${index}`}>
-              <img src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" />
+              <Image src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" />
             </div>
           ))}
         </div>
@@ -35,13 +36,13 @@ const Multislide: React.FC<MultislideProps> = ({ topSliderImages, bottomSliderIm
           {/* Premier groupe de slides */}
           {bottomSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`bottom-slide-${index}`}>
-              <img src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
+              <Image src={imageUrl} alt={`Slide ${index + 1}`} loading="lazy" />
             </div>
           ))}
           {/* Deuxième groupe de slides pour l'effet infini */}
           {bottomSliderImages.map((imageUrl, index) => (
             <div className="slide" key={`bottom-slide-duplicate-${index}`}>
-              <img src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy" />
+              <Image src={imageUrl} alt={`Slide ${index + 1} (duplicate)`} loading="lazy"  />
             </div>
           ))}
         </div>

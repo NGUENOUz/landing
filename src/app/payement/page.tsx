@@ -6,7 +6,7 @@ import PaymentForm from '../component/payement';
 export default function Pay() {
   return (
     <div>
-      <PaymentForm/>
+      <PaymentForm texte='acheter'/>
     </div>
   );
 }
