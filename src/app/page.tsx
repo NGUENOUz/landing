@@ -23,7 +23,7 @@ import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-import { BentoGrid } from "./component/ui/bendo-grid";
+// import { BentoGrid } from "./component/ui/bendo-grid";
 import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
 
