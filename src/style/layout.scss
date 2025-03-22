@@ -245,7 +245,7 @@ main{
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            padding: 0 5%;
+            padding: 0 10%;
             border-radius: 8px;
             border: 0.5px solid rgba(128, 128, 128, 0.384);
             background: linear-gradient(133deg, rgba(14, 14, 14, 1) 41%, rgba(237, 28, 36, 0.34077380952380953) 100%);
@@ -261,7 +261,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                
+
                 gap: 4px;
                 
                 h1{
@@ -271,11 +271,11 @@ main{
                 .items{
                     display: flex;
                     flex-direction: column;
-                    font-size: 16px;
+                    font-size: 24x;
 
                     .item{
-                      text-align: left;
-
+                      
+                       font-size: 24px;
                         .icon-fleche{
                             color: #c50505;
                         }
@@ -289,6 +289,16 @@ main{
             flex-direction: column;
             align-items: center;
             gap: 10px;
+            width: 83vw; // Largeur par défaut (peut être ajustée)
+            height: 90vh; // Hauteur par défaut (peut être ajustée)
+            
+           
+
+            .react-player {
+                margin-top: 5%;
+                width: 80% !important; // Important pour que la vidéo prenne toute la largeur du conteneur
+                height: 100% !important; // Important pour que la vidéo prenne toute la hauteur du conteneur
+              }
         }
     }
     
@@ -595,13 +605,52 @@ main{
        }
 
      .demo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20% 5% 10% 2%;
         .atout{
             display: flex;
             flex-direction: column;
 
             .bookImage{
-                width: 50%;
+                width: 80%;
                 height: 50%;
+            }
+
+            .atout__description{
+                width: 120%;
+            
+                margin-top: -10%;
+                padding: 0;
+                padding-bottom: 10%;
+                h1{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                .items{
+                    margin-top: 5%;
+                    font-weight: 300;
+                    font-size: 12px;
+                    text-align: left;
+                    gap: 15px;
+
+                    .item{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .video{
+            width: 115vw;
+            height: 50vh;
+            padding: 0;
+            background: #000;
+
+            .react-player{
+                width: 100%;
             }
         }
      }  

@@ -10,6 +10,7 @@ import logo from "../images/logoo.png";
 // import Temoignage from "./component/temoignage";
 // import Faq from "./component/faq";
 import Link from 'next/link';
+import ReactPlayer from "react-player";
 import Notifications from "./component/notification";
 // import BtnPay from "./component/payement";
 import Book from "../images/book.png"
@@ -115,8 +116,14 @@ export default function Home() {
            </div>
         </div>
         <div className="video">
-             <video src=""></video>
+          <ReactPlayer
+            url="https://youtu.be/PrqVcCSIVdk?si=kh3r1ZyP-a2uvNiP"
+            controls // Affiche les contrôles de lecture
+              // Hauteur de la vidéo
 
+              className="react-player"
+           />
+           
              <button className="btn btn-one"><span>Voir le programme</span> 
             <span><ArrowDropDownIcon  className="icon"/></span>
           </button>
