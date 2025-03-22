@@ -16,6 +16,7 @@ import Book from "../images/book.png"
 import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
 
 export default function Home() {
@@ -77,7 +78,37 @@ export default function Home() {
 
             <div className="items">
               <span className="item">
-                <span></span>
+                <span>
+                  <SubdirectoryArrowRightIcon className="icon-fleche"/>
+               </span>
+                <span>Le precess complet pour créer une miniature </span>
+              </span>
+
+              <span className="item">
+                <span>
+                  <SubdirectoryArrowRightIcon className="icon-fleche"/>
+               </span>
+                <span>Le precess complet pour créer une miniature </span>
+              </span>
+
+              <span className="item">
+                <span>
+                  <SubdirectoryArrowRightIcon className="icon-fleche"/>
+               </span>
+                <span>Le precess complet pour créer une miniature </span>
+              </span>
+
+              <span className="item">
+                <span>
+                  <SubdirectoryArrowRightIcon className="icon-fleche"/>
+               </span>
+                <span>Le precess complet pour créer une miniature </span>
+              </span>
+
+              <span className="item">
+                <span>
+                  <SubdirectoryArrowRightIcon className="icon-fleche"/>
+               </span>
                 <span>Le precess complet pour créer une miniature </span>
               </span>
             </div>

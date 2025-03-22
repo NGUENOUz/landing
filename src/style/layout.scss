@@ -53,6 +53,7 @@ button{
     color: rgba(228, 222, 222, 0.76);
     
  }
+ 
 
 }
 .btn-one{
@@ -249,10 +250,37 @@ main{
             border: 0.5px solid rgba(128, 128, 128, 0.384);
             background: linear-gradient(133deg, rgba(14, 14, 14, 1) 41%, rgba(237, 28, 36, 0.34077380952380953) 100%);
             backdrop-filter: blur(12px);
+
             .bookImage{
              rotate: 90deg;
               width: 30%;
               height: 30%;
+            }
+
+            .atout__description{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+                gap: 4px;
+                
+                h1{
+                    font-size: 38px;
+                    padding: 0 2%;
+                }
+                .items{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+
+                    .item{
+                      text-align: left;
+
+                        .icon-fleche{
+                            color: #c50505;
+                        }
+                    }
+                }
             }
         }
 
@@ -570,6 +598,11 @@ main{
         .atout{
             display: flex;
             flex-direction: column;
+
+            .bookImage{
+                width: 50%;
+                height: 50%;
+            }
         }
      }  
 
