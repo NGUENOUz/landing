@@ -22,32 +22,12 @@ button{
     border-radius: 10px;
     display: block;
     border: none;
- cursor: pointer;
- display: flex;
- align-items: center;
-
-
- 
- .btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
- .btn-grad {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-  }
-
-  .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
- 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+        transform: scale(1.1); /* Augmente la taille du bouton au survol */
+      }
 
  .icon{
     color: rgba(228, 222, 222, 0.76);
@@ -56,6 +36,12 @@ button{
  
 
 }
+:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1em);
+  }
 .btn-one{
    background: red;
 }
@@ -103,9 +89,9 @@ button{
    border-radius: 10px;
    display: block;
    border: none;
-cursor: pointer;
+   cursor: pointer;
    animation: gradientAnimation 2s linear infinite;
- }
+  }
 
  @keyframes gradientAnimation {
     0% {
@@ -301,7 +287,68 @@ main{
               }
         }
     }
+
+    .objectif{
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        align-items: center;
+        color: white;
+        padding: 5% 8%;
+
+        h1{
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .cart__container{
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 5% 2%;
+
+            .cart{
+               display: flex;
+               flex-direction: row;
+               gap: 10px;
+               align-items: center;
+               padding: 2% 3%;
+               border-radius: 12px;
+               background: #aaa4a41f;
+               backdrop-filter: blur(10px);
+               box-shadow: 2px 2px 9px rgba(63, 62, 62, 0.233);
+
+               font-size: 24px;
+                .icons{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+        }
+    }
     
+
+    .portfolio{
+        width: 100%;
+        height: auto;
+        background: #0e0d0d;
+        padding: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+       
+
+        .folio-item{
+            background-color: #00000023;
+    
+            box-shadow: 2px 2px 9px rgba(255, 0, 0, 0.603);
+        }
+    }
     .cible{
         padding: 40px 30px;
         text-align: center;

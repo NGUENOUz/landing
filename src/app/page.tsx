@@ -8,16 +8,24 @@ import logo from "../images/logoo.png";
 // import Modules from "./component/modules";
 // import PayCart from "./component/payCart";
 // import Temoignage from "./component/temoignage";
-// import Faq from "./component/faq";
+ import Faq from "./component/faq";
 import Link from 'next/link';
 import ReactPlayer from "react-player";
 import Notifications from "./component/notification";
 // import BtnPay from "./component/payement";
 import Book from "../images/book.png"
+import videoIcon from "../images/videoIcon.png"
+import fileIcon from "../images/fileIcon.png"
+import reseauIcon from "../images/reseauIcon.png"
+import settingIcon from "../images/settingIcon.png"
+
 import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
+import { BentoGrid } from "./component/ui/bendo-grid";
+import BentoGridDemo from "./payement/page";
+import BtnPay from "./component/payement";
 
 
 export default function Home() {
@@ -130,6 +138,55 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="objectif">
+        <h1>Deviens un pro du No-code !</h1>
+
+        <h2>Programme d&#39;accompagnement en ligne, développe une compétence monétisable</h2>
+
+        <div className="cart__container">
+          <div className="cart">
+            <Image src={videoIcon} alt="" className="icons"/>
+
+            <span>+20 Heures de vidéos à suivre a ton rythme</span>
+          </div>
+          <div className="cart">
+            <Image src={fileIcon} alt="" className="icons"/>
+
+            <span>+40 Chapitre repartie en 7 modules</span>
+          </div>
+          <div className="cart">
+            <Image src={reseauIcon} alt="" className="icons"/>
+
+            <span>Rejoins la communauté des miniamaker</span>
+          </div>
+          <div className="cart">
+            <Image src={settingIcon} alt="" className="icons"/>
+
+            <span>+ Un tuto de cas pratique chaque mois</span>
+          </div>
+          <div className="cart">
+            <Image src={settingIcon} alt="" className="icons" />
+
+            <span>+ Un tuto de cas pratique chaque mois</span>
+          </div>
+        </div>
+
+        <BtnPay texte="Je veux la formation"/>
+      </section>
+
+
+      <section className="portfolio">
+         <BentoGridDemo/>
+         <BtnPay texte="Je veux la formation"/>
+      </section>
+
+      
+      <section className="modules">
+
+      </section>
+
+
+
       
 
    
@@ -220,10 +277,10 @@ export default function Home() {
        <Temoignage/>
      </section> */}
 
-     {/* <section className="faq">
+     <section className="faq">
       <h1>Les <span className="tips">questions</span> les plus courantes</h1>
       <Faq/>
-     </section> */}
+     </section>
 
 
      <section className="notif">

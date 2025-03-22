@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
         hostname: 'd1yei2z3i6k35z.cloudfront.net',
         pathname: '**', // Allow all paths under this hostname
       },
+
+      {
+        protocol: 'https',
+        hostname: 'pbs.twimg.com',
+        pathname: '**', // Autoriser tous les chemins sous ce nom d'hôte
+      },
     ],
   },
   /* config options here */

@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import '../../style/payement.scss';
+
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 interface BtnProps {
   texte: string;
@@ -51,11 +52,17 @@ export default function BtnPay({ texte, className }: BtnProps) {
   return (
     <div>
       <button
-        className={`btn-grad ${className || ''}`} // Ajout des classes CSS
+        className={`btn-one ${className || ''}`} // Ajout des classes CSS
         onClick={handleSubmit}
         disabled={loading}
       >
-        {loading ? 'Chargement...' : texte} {/* Utilisation de la prop texte */}
+        <span>
+        {loading ? 'Chargement...' : texte}  {/* Utilisation de la prop texte */}
+        </span> 
+
+        <span>
+                <ArrowRightIcon  className="icon"/>
+          </span>
       </button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
