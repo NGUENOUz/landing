@@ -139,7 +139,7 @@ export default function Home() {
       </section>
 
       <section className="objectif">
-        <h1>Deviens un pro du No-code !</h1>
+        <h1>Deviens <span className="tips">un pro</span> du No-code !</h1>
 
         <h2>Programme d&#39;accompagnement en ligne, développe une compétence monétisable</h2>
 

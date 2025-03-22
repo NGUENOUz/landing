@@ -294,7 +294,7 @@ main{
         background: #000;
         align-items: center;
         color: white;
-        padding: 5% 8%;
+        padding: 5% 6%;
 
         h1{
             font-size: 60px;
@@ -700,7 +700,40 @@ main{
                 width: 100%;
             }
         }
-     }  
+     } 
+     
+     .objectif{
+        h1{
+            font-size: 32px;
+            text-align: center;
+            padding: 1%;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+
+        .cart__container{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           gap: 10px;
+           padding: 2% 0;
+           margin-top: 5%;
+            .cart{
+                display: flex;
+                flex-direction: column;
+                padding: 2%;
+                align-items: center;
+                text-align: center;
+                width: 45%;
+                height: auto;
+                font-size: 16px;
+
+            }
+        }
+     }
 
     .cible{
         padding: 40px 30px;

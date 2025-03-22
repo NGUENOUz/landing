@@ -1,7 +1,8 @@
 .panels{
+  
     :hover,:focus{
-        background-color: orange;
-        color: white;
+        color: #1f1d1d;
+        transform: none !important;
     }
    
 }
@@ -9,29 +10,60 @@
 
 .panel{
     box-shadow: 2px 2px 9px rgba(99, 95, 95, 0.253);
-}
 
-.titre__content {
- display: flex;
- flex-direction: column;
+    .titre{
+      display: flex;
+      flex-direction: column;
+      .t{
+        font-weight: bold;
+      }
 
- .titre{
-    font-weight: bold;
-
- }
-
- .time{
-    font-size: 12px;
+      
+   .time{
     color: #9e9e9e;
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     flex-direction: row;
     gap: 5px;
     
+
+    .iconTime{
+      color: #9e9e9e;
+      font-size: 20px;
+    }
+    
  }
+   }
+  
+  .number{
+    padding: 1% 2%;
+    border-radius: 24px;
+    background: red;
+    font-weight: bold;
+    color: white;
+  }
+
+  .titre__content {
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+  
+   
+  
+  }
 }
+
+.faq__description{
+  li{
+    color: #000000af;
+  }
+}
+
+
 
 .module__description{
     padding: 10px 15px;
