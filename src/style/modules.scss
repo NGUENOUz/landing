@@ -161,6 +161,13 @@
 
   @media (max-width: 480px) {
 
+    .titre__content{
+      .number{
+       padding: 0.5% 2%;
+        font-size: 14px;
+      }
+    }
+
     .modules__content{
        display: flex;
        flex-wrap: wrap;
