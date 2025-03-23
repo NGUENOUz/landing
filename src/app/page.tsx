@@ -8,7 +8,7 @@ import logo from "../images/logoo.png";
 // import Modules from "./component/modules";
 // import PayCart from "./component/payCart";
 // import Temoignage from "./component/temoignage";
- import Faq from "./component/faq";
+//  import Faq from "./component/faq";
 import Link from 'next/link';
 import ReactPlayer from "react-player";
 import Notifications from "./component/notification";
@@ -16,6 +16,7 @@ import Notifications from "./component/notification";
 import Book from "../images/book.png"
 import videoIcon from "../images/videoIcon.png"
 import fileIcon from "../images/fileIcon.png"
+// import Pack from "../images/pack.jpg"
 import reseauIcon from "../images/reseauIcon.png"
 import settingIcon from "../images/settingIcon.png"
 
@@ -26,6 +27,8 @@ import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRig
 // import { BentoGrid } from "./component/ui/bendo-grid";
 import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
+import { ContainerScroll } from "./component/ui/container-scrool-animation";
+import ModulesFormations from "./component/modules";
 
 
 export default function Home() {
@@ -123,19 +126,28 @@ export default function Home() {
             </div>
            </div>
         </div>
-        <div className="video">
-          <ReactPlayer
-            url="https://youtu.be/PrqVcCSIVdk?si=kh3r1ZyP-a2uvNiP"
-            controls // Affiche les contrôles de lecture
-              // Hauteur de la vidéo
+       
+      </section>
 
-              className="react-player"
-           />
-           
-             <button className="btn btn-one"><span>Voir le programme</span> 
-            <span><ArrowDropDownIcon  className="icon"/></span>
-          </button>
-        </div>
+      <section className="demoVideo">
+      
+        <ContainerScroll titleComponent={<h1>La <span className="tips">Demo</span> de formation</h1>}>
+        
+           <div className="video__container">
+                      
+                            <ReactPlayer
+                              url="https://youtu.be/PrqVcCSIVdk?si=kh3r1ZyP-a2uvNiP"
+                              controls // Affiche les contrôles de lecture
+                                // Hauteur de la vidéo
+                  
+                                className="react-player"
+                             />
+                             
+          </div> 
+
+                 
+        </ContainerScroll>
+ 
       </section>
 
       <section className="objectif">
@@ -277,9 +289,16 @@ export default function Home() {
        <Temoignage/>
      </section> */}
 
-     <section className="faq">
-      <h1>Les <span className="tips">questions</span> les plus courantes</h1>
-      <Faq/>
+     <section className="moduleFormations">
+     
+
+     <h1>les <span className="tips">Modules</span> de la  formation</h1>
+     <h2>Voici le programme de la formation que vous allez recevoir après votre inscription </h2>
+        <div className="faq__container">
+        <ModulesFormations/>
+        <BtnPay texte="Je veux la formation"/>
+
+        </div>
      </section>
 
 

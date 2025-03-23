@@ -28,7 +28,7 @@ export default function Notifications() {
       const interval = setInterval(() => {
         const randomIndex = Math.floor(Math.random() * testimonials.length);
         setCurrentTestimonial(testimonials[randomIndex]);
-      }, 1000);
+      }, 500000);
   
       return () => clearInterval(interval);
     }, []);

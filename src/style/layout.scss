@@ -270,24 +270,40 @@ main{
             }
         }
 
-        .video{
+        
+    }
+    .demoVideo{
+        margin-top: -15%;
+        padding: 5% 10%;
+        background: #000;
+        height: auto;
+        text-align: center;
+        h1{
+            font-size: 4.5em;
+            font-weight: bold;
+            color: white;
+        }
+        
+
+        .video__container{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            width: 83vw; // Largeur par défaut (peut être ajustée)
-            height: 90vh; // Hauteur par défaut (peut être ajustée)
+           overflow: hidden;
+            width: 100% !important; // Largeur par défaut (peut être ajustée)
+            height: 100vh !important; 
+            object-fit: cover;
             
-           
-
+            
             .react-player {
                 margin-top: 5%;
-                width: 80% !important; // Important pour que la vidéo prenne toute la largeur du conteneur
+                overflow: hidden;
+                width: 100% !important; // Important pour que la vidéo prenne toute la largeur du conteneur
                 height: 100% !important; // Important pour que la vidéo prenne toute la hauteur du conteneur
               }
         }
-    }
-
+     }
     .objectif{
         display: flex;
         flex-direction: column;
@@ -334,7 +350,7 @@ main{
     .portfolio{
         width: 100%;
         height: auto;
-        background: #0e0d0d;
+        background: #020202;
         padding: 5% 10%;
         display: flex;
         flex-direction: column;
@@ -454,6 +470,8 @@ main{
         }
     }
 
+    
+
     .plus{
         padding: 10% 10%;
         display: flex;
@@ -552,29 +570,41 @@ main{
         overflow: hidden;
       }
 
-      .faq{
-        padding: 10% 10%;
-        width: 100%;
+      .moduleFormations{
+        padding: 5% 10%;
         height: auto;
-        background: #000;
         color :white;
-
-        
+        background: #00000015;
+        background-image: url(../images/bg4.png);
+      
+        display: flex;
+        flex-direction: column;
 
         h1{
-             padding-bottom: 5%;
-            font-size: 48px;
+            font-size: 4.5em;
+            font-weight: bold;
+            color: white;
             text-align: center;
-                font-weight: bold;
-                font-family: 'latobold', sans-serif;
         }
-
-        .faq__description{
-            padding: 1% 5%;
-            display: flex;
-            flex-direction: column;
-            
-        }
+       h2{
+        text-align: center;
+       }
+       .faq__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+        padding: 2%;
+        border-radius: 24px;
+       
+    
+       .faq__description{
+           padding: 1% 5%;
+           display: flex;
+           flex-direction: column;
+           
+       }
+       }
 
       }
 
@@ -701,6 +731,8 @@ main{
             }
         }
      } 
+
+     
      
      .objectif{
         h1{
