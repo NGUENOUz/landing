@@ -19,7 +19,7 @@ import fileIcon from "../images/fileIcon.png"
 // import Pack from "../images/pack.jpg"
 import reseauIcon from "../images/reseauIcon.png"
 import settingIcon from "../images/settingIcon.png"
-
+import Bonus from "../images/bonus.png"
 import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -28,7 +28,10 @@ import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRig
 import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
 import { ContainerScroll } from "./component/ui/container-scrool-animation";
+import StarsIcon from '@mui/icons-material/Stars';
 import ModulesFormations from "./component/modules";
+import { AnimatedTestimonials } from "./component/temoignage";
+import { testimonials } from "./component/bd/temoigne";
 
 
 export default function Home() {
@@ -131,7 +134,7 @@ export default function Home() {
 
       <section className="demoVideo">
       
-        <ContainerScroll titleComponent={<h1>La <span className="tips">Demo</span> de formation</h1>}>
+        <ContainerScroll titleComponent={<h1>La <span className="tips">Demo</span> de la formation</h1>}>
         
            <div className="video__container">
                       
@@ -299,6 +302,68 @@ export default function Home() {
         <BtnPay texte="Je veux la formation"/>
 
         </div>
+     </section>
+
+     <section className="bonus">
+
+       <div className="bonus__container">
+          <Image src={Bonus} alt="" className="bonusIcon"/>
+          <h2>En plus de la formation , vous aurez droit à :</h2>
+         <div className="bonus__box">
+         
+          <span className="bonusItem">
+          <span className="bunusIcon"><StarsIcon/></span>
+            <span>Un accompagnement personnaliser pour répondre à vos questions</span>
+          </span>
+
+          <span className="bonusItem">
+          <span className="bunusIcon"><StarsIcon/></span>
+            <span>Plus de 1000 livres audios qui traites des sujets comme l&apos;entreprenaria , le developpement personnel, la spiritualité et bien plus</span>
+          </span>
+
+          <span className="bonusItem">
+            <span className="bunusIcon"><StarsIcon/></span>
+            <span>Vous aurez accès à un groupe privée des menbres de la formations , avec qui vous pouriez tisser des liens , evoluer dans le monde professionels , travailler ensemble sur des projets et bien plus .</span>
+          </span>
+
+          
+         </div>
+         <BtnPay texte="Je veux la formation"/>
+       </div>
+        
+     </section>
+
+     <section className="temoignage">
+      <h1>Temoignage</h1>
+      <h2><span className="asterice">* </span>Ecoute ce que les autres disent de cette formation<span className="asterice">*</span> </h2>
+
+      <div className="temoignage__container">
+        <AnimatedTestimonials testimonials={testimonials} autoplay={false}/>
+      </div>
+     </section>
+
+     <section className="price">
+      <div className="priceLeft">
+         <div className="title">
+          <h1>Rejoind la formation Maintenant</h1>
+         </div>
+
+         <span className="price"><s>75 000 XAF</s></span>
+         <span className="newPrice">8500 XAF</span>
+         <div className="priceItems">
+            <span className="Item">
+              <span></span>
+              <span></span>
+            </span>
+         </div>
+
+
+
+      </div>
+
+      <div className="priceRight">
+        
+      </div>
      </section>
 
 
