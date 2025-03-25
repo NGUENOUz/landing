@@ -315,7 +315,7 @@ export default function Home() {
        <Image src={certification} alt="" className="certification"/>
         <h1>Garentie</h1>
 
-        <p>Si après avoir suivi l'intégralité de la formation et appliqué toutes les étapes, tu ne parviens pas à créer des miniatures professionnelles et captivantes qui augmentent ton taux de clic, je te rembourse intégralement. Ta réussite est ma priorité !</p>
+        <p>Si après avoir suivi l&apos;intégralité de la formation et appliqué toutes les étapes, tu ne parviens pas à créer des miniatures professionnelles et captivantes qui augmentent ton taux de clic, je te rembourse intégralement. Ta réussite est ma priorité !</p>
        </div>
       </div>
      </section>
