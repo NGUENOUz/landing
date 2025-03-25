@@ -85,7 +85,7 @@ export default function Home() {
 
       <section className="demo">
         <div className="atout">
-           <Image src={Book} alt="" className="bookImage"/>
+           <Image src={Book} alt="" className="bookImage"   data-aos="zoom-in"/>
 
            <div className="atout__description">
             <h1>Au cours de cette formation , je vais te montrer :</h1>
@@ -158,22 +158,22 @@ export default function Home() {
         <h2>Programme d&#39;accompagnement en ligne, développe une compétence monétisable</h2>
 
         <div className="cart__container">
-          <div className="cart">
+          <div className="cart" data-aos="zoom-in">
             <Image src={videoIcon} alt="" className="icons"/>
 
-            <span>+20 Heures de vidéos à suivre a ton rythme</span>
+            <span >+20 Heures de vidéos à suivre a ton rythme</span>
           </div>
-          <div className="cart">
+          <div className="cart" data-aos="zoom-in">
             <Image src={fileIcon} alt="" className="icons"/>
 
             <span>+40 Chapitre repartie en 7 modules</span>
           </div>
-          <div className="cart">
+          <div className="cart" data-aos="zoom-in">
             <Image src={reseauIcon} alt="" className="icons"/>
 
             <span>Rejoins la communauté des miniamaker</span>
           </div>
-          <div className="cart">
+          <div className="cart" data-aos="zoom-in">
             <Image src={settingIcon} alt="" className="icons"/>
 
             <span>+ Un tuto de cas pratique chaque mois</span>

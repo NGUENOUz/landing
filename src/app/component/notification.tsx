@@ -36,7 +36,7 @@ export default function Notifications() {
     if (!currentTestimonial) return null;
   return (
     <div className="notifications">
-      <Image
+      {/* <Image
      width={0} height={0}
         src={currentTestimonial.flag.src} // Utilisation de currentTestimonial.flag.src
         alt={`${currentTestimonial.country} flag`}
@@ -44,7 +44,7 @@ export default function Notifications() {
       <p>
         <strong>{currentTestimonial.name}</strong>, {currentTestimonial.country}
       </p>
-      <p>Vient de souscrire à la formation Excel !</p>
+      <p>Vient de souscrire à la formation Excel !</p> */}
     </div>
   );
 }

@@ -43,7 +43,9 @@ button{
     transform: scale(1.1em);
   }
 .btn-one{
-   background: red;
+    background-image: linear-gradient(to right, #fa0909 0%, #da4b4b  51%, #fa0606  100%);
+    animation: changeBg 2s linear infinite;
+
 }
 .link{text-align: center;
     color: white;
@@ -64,34 +66,9 @@ button{
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
 }
-.payCartMobile{
-                
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #f07807;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    display: none;
-    
-}
-.btn-gra {background-image: linear-gradient(to right, #ee080880 0%, #f8edec42  51%, #f00606ee  100%) ;animation: gradientAnimation 2s linear infinite;}
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
-   border: none;
-   cursor: pointer;
-   animation: gradientAnimation 2s linear infinite;
-  }
+
+
+
   .asterice{
     color: red;
 }
@@ -149,7 +126,14 @@ button{
   } 
 
 
-  
+  @keyframes changeBg {
+    from{
+        background-size: 200% auto;
+    }
+    to{
+        background-position: right center; 
+    }
+  }
 
 
 main{
@@ -784,9 +768,9 @@ main{
         color: white;
         padding: 2% 10%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
      
 
 
@@ -1077,6 +1061,10 @@ main{
   }
   .footer{
     padding: -10% -4%;
+
+    .logo{
+        width: 30%;
+    }
 
   }
   .footer_content{
