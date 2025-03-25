@@ -569,6 +569,44 @@ main{
         
     }
 
+    .moduleFormations{
+        padding: 5% 10%;
+        height: auto;
+        color :white;
+        background: #00000015;
+        background-image: url(../images/bg4.png);
+      
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 4.5em;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+       h2{
+        text-align: center;
+       }
+       .faq__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+        padding: 2%;
+        border-radius: 24px;
+       
+    
+       .faq__description{
+           padding: 1% 5%;
+           display: flex;
+           flex-direction: column;
+           
+       }
+       }
+
+      }
+
     .temoignage{
         width: 100%;
         background:radial-gradient(rgb(17, 0, 0),rgb(7, 7, 7));
@@ -720,145 +758,33 @@ main{
         }
     }
 
-    
 
-    .plus{
-        padding: 10% 10%;
+    .faq{
+
+        background: #000;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        background: #f3bc0646;
-
-        h1{
-            padding: 10% 0;
-            font-size: 48px;
-            text-align: center;
-                font-weight: bold;
-                font-family:"Anton",sans-serif;
-            
-        }
-
-
-        .plus__content{
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 10% 20%;
-            align-items: center;
-           
-            
-           
-           
-            
-             
-            .plus__picture{
-
-              .UserPic{
-                margin-top: -20%;
-                width: 100%;
-                height: auto;
-              }
-            }
-
-            .plus__description{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-                margin-top: -10%;
-                background: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente */
-                border-radius: 10px; /* Bords arrondis (facultatif) */
-                box-shadow: 0 4px 6px rgba(151, 150, 150, 0.1); /* Ombre légère (facultatif) */
-                backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
-                -webkit-backdrop-filter: blur(10px); /* Pour la compatibilité avec Safari */
-                padding: 20px; /* Espacement intérieur (facultatif) */
-            }
-
-        }
-    }
-
-    .felicitation{
-        padding: 10% 10%;
-
-        h1{
-            font-size: 48px;
-            text-align: center;
-                font-weight: bold;
-                font-family: 'latobold', sans-serif;
-            
-        }
-
-        .felicitaion__container{
-           display: flex;
-           align-items: center;
-           flex-direction: column;
-              gap: 10px; 
-              padding-top: 5%;
-              text-align: center;
-
-              span{
-                padding: 0% 20%;
-                font-size: 24px;
-              }
-
-              .felicit{
-                width: 80%;
-              }
-        }
-
-
-    }
-
-    
-      .moduleFormations{
         padding: 5% 10%;
-        height: auto;
-        color :white;
-        background: #00000015;
-        background-image: url(../images/bg4.png);
-      
-        display: flex;
-        flex-direction: column;
-
-        h1{
-            font-size: 4.5em;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-        }
-       h2{
-        text-align: center;
-       }
-       .faq__container{
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-top: 3%;
-        padding: 2%;
-        border-radius: 24px;
-       
-    
-       .faq__description{
-           padding: 1% 5%;
-           display: flex;
-           flex-direction: column;
-           
-       }
-       }
 
-      }
+        svg{
+            color: white;
+        }
+    }
+
+    
+      
 
       .footer{
-        padding: -10% 0% 0% 10%;
+    
         width: 100%;
         height: auto;
-        background: orange;
+        background: rgb(0, 0, 0);
         color: white;
-        padding: 10% 10%;
+        padding: 2% 10%;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         gap: 10px;
      
@@ -870,7 +796,7 @@ main{
         }
     
        .logo{
-        width: 20%;
+        width: 10%;
         height: auto;
         
         

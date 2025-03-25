@@ -37,12 +37,9 @@ export default function Faq() {
           <Typography component="span" className='titre__content'>
             <span className='titre'>
               <span className='t'>Introduction</span>
-              <span className='time'>
-                <AlarmAddIcon className='iconTime'/>
-                <span>Durée : 2Heures</span>
-              </span>
+             
             </span>
-            <span className='number'>Module 0</span>
+           
             </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -71,8 +68,11 @@ export default function Faq() {
          className='panel'
        >
          <Typography component="span" className='titre__content'>
-           <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
-           
+           <span className='titre'>
+             <span className='t'>Introduction</span>
+            
+           </span>
+          
            </Typography>
        </AccordionSummary>
        <AccordionDetails>
@@ -87,36 +87,40 @@ export default function Faq() {
       
          </Typography>
        </AccordionDetails>
-      </Accordion>
-      <Accordion 
+     </Accordion>
+
+     <Accordion 
       
-      className='panels'
-      expanded={expanded === 'panel3'} onChange={handleChange('panel3')}
- 
-      >
-       <AccordionSummary
-         expandIcon={<ExpandMoreIcon/>}
-         aria-controls="panel1bh-content"
-         id="panel1bh-header"
-         className='panel'
+       className='panels'
+       expanded={expanded === 'panel3'} onChange={handleChange('panel3')}
+  
        >
-         <Typography component="span" className='titre__content'>
-           <span className='titre'>Module 1 : Les bases incontournables d&#39;Excel</span>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon/>}
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
+          className='panel'
+        >
+          <Typography component="span" className='titre__content'>
+            <span className='titre'>
+              <span className='t'>Introduction</span>
+             
+            </span>
            
-           </Typography>
-       </AccordionSummary>
-       <AccordionDetails>
-         <Typography className='faq__description'>
-         <span>Dans ce module , vous allez apprendre : </span>
-         
-         
-               <li>Les bases d&#39;Excel</li>
-               <li>Les formules de base</li>
-               <li>Les raccourcis clavier</li>
-               <li>Les astuces pour gagner du temps</li>
-      
-         </Typography>
-       </AccordionDetails>
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='faq__description'>
+          <span>Dans ce module , vous allez apprendre : </span>
+          
+          
+                <li>Les bases d&#39;Excel</li>
+                <li>Les formules de base</li>
+                <li>Les raccourcis clavier</li>
+                <li>Les astuces pour gagner du temps</li>
+       
+          </Typography>
+        </AccordionDetails>
       </Accordion>
 
 

@@ -1,23 +1,18 @@
 'use client';
 import Image from "next/image";
 import '../style/layout.scss';
-// import mockup from "../images/video.png";
-// import User from "../images/User.png";
+
 import logo from "../images/logoo.png";
-// import felicitation from "../images/felicitation.gif"; 
-// import Modules from "./component/modules";
-// import PayCart from "./component/payCart";
-// import Temoignage from "./component/temoignage";
-//  import Faq from "./component/faq";
+
 import Link from 'next/link';
 import ReactPlayer from "react-player";
 import Notifications from "./component/notification";
-// import BtnPay from "./component/payement";
+
 import Book from "../images/book.png"
 import videoIcon from "../images/videoIcon.png"
 import certification from "../images/certificatio.png"
 import fileIcon from "../images/fileIcon.png"
-// import Pack from "../images/pack.jpg"
+
 import reseauIcon from "../images/reseauIcon.png"
 import settingIcon from "../images/settingIcon.png"
 import Bonus from "../images/bonus.png"
@@ -26,7 +21,7 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-// import { BentoGrid } from "./component/ui/bendo-grid";
+
 import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
 import { ContainerScroll } from "./component/ui/container-scrool-animation";
@@ -35,6 +30,7 @@ import ModulesFormations from "./component/modules";
 import { AnimatedTestimonials } from "./component/temoignage";
 import { testimonials } from "./component/bd/temoigne";
 import Countdown from "./component/countDown";
+import Faq from "./component/faq";
 
 
 export default function Home() {
@@ -203,98 +199,6 @@ export default function Home() {
 
       </section>
 
-
-
-      
-
-   
-
-     {/* <section className="cible">
-        <h2><span className="tips">Pour qui </span>est cette formation ? </h2>
-        <div className="cible__content">
-          <div className="cible__content__item">
-            <h3>#1 Etudiants</h3>
-            <p>Vous êtes étudiants et vous avez besoin de maitriser Excel pour vos études ?</p>
-          </div>
-          <div className="cible__content__item cible2">
-            <h3>#2 Professionnels</h3>
-            <p>Vous êtes professionnels et vous avez besoin de maitriser Excel pour votre travail ?</p>
-          </div>
-          <div className="cible__content__item">
-            <h3>#1 Entrepreneurs</h3>
-            <p>Vous êtes entrepreneurs et vous avez besoin de maitriser Excel pour votre entreprise ?</p>
-          </div>
-        </div>
-
-        <h1>
-          Profitez de cette offre unique dès maintenant !
-        </h1>
-
-        <p>2500 XAf seulement au lieux de </p>
-        <span className="price">12 500 Xaf</span>
-        <BtnPay texte="Profiter Maintenant"/>
-        <span>Offre valable pour 24h</span>
-        
-     </section>
-
-     <section className="modules">
-      <h1>Ce que <span className="tips">vous</span> allez apprendre</h1>
-
-      <div className="modules__content">
-          
-                <Modules/>
-
-                <PayCart/>
-
-                <div className="payCartMobile">
-                        <Image src={mockup} alt="preview" className="preview" width={0} height={0}/>
-                        <h2>Formation 100% pratique</h2>
-                        <p>Voici un apperçu du contenu de cette formation qu&apos;il vous faut !!!</p>
-                        <p>Ne manquez pas cette opportunité de vous faire former dans Excel</p>
-                        <button className="btn-grad">Je profite de l&apos;offre</button>
-                 </div>
-                
-      </div>
-     </section> */}
-
-{/* 
-     <section className="plus">
-     <h1>Rien à perdre mais tout  <span className="tips">à gagner</span> </h1>
-
-     <div className="plus__content">
-    
-     <div className="plus__picture">
-        <Image src={User} alt="previewPic" className="UserPic" width={0} height={0}/>
-      </div>
-      <div className="plus__description">
-        <p>Ne ne vous offrons pas seulement la formation !</p>
-        <p>En plus de la formation , vous aurez egalement accès à un groupe whatsapp privée des personnes passionner par les nouvelles technologies , avec qui vous poriez echangier par rapport aux difficulter que vous recntrer dans la mise en proatques des connaissances partager dans la formation , et pas seulement </p>
-        <p>Vous aurez egalement droit à plus de 1000 livres audios qui traites des sujets utilies sur </p>
-        <button className="btn-grad">
-          Profiter de l&apos;offre
-        </button>
-     
-        <span>Offre valable 24h</span>
-     </div>
-
-     
-
-     
-     </div>
-     </section> */}
-{/* 
-     <section className="felicitation">
-      <h1>Un mot de plus <span className="tips">pour toi</span> ! </h1>
-       <div className="felicitaion__container">
-        <span>Je voulais juste te feciliter , car je suis sur que tu ne laissera pas cette offre unique te passer par la porte . alors n&apos;attend plus , passe à l&apos;action maintenant , et profite de la promo , d&apos;une formaton de qualité , d&apos;un accompagnement à vie pendant et après ta formations et obtiens bien d&apos;autres bonus </span>
-        <Image src={felicitation}   alt="" className="felicit" width={0} height={0}/>
-       </div>
-     </section> */}
-
-     {/* <section className="temoins">
-       <Temoignage/>
-     </section> */}
-
      <section className="moduleFormations">
      
 
@@ -417,20 +321,28 @@ export default function Home() {
      </section>
 
 
+     <section className="faq">
+      <h1>Les questions frequament poser :</h1>
+        <Faq/>
+     </section>
+
+
      <section className="notif">
           <Notifications/>
      </section>
-{/* 
+
      <section className="footer">
+     <Image src={logo} alt="logo" className="logo" width={0} height={0}/>
      <div className="footer_content">
+
+    
           <h1>
           © 2025 Dreno
           </h1>
           <p>Tous droits réservés. | Mentions légales | Politique de confidentialité | Ce site n est pas affilié à Microsoft ou Facebook.</p>
         </div>
-        <Image src={logo} alt="logo" className="logo" width={0} height={0}/>
 
-     </section> */}
+     </section> 
     </main>
   );
 }
