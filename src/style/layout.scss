@@ -599,18 +599,124 @@ main{
         display: flex;
         padding: 5% 15%;
         justify-content: space-between;
-        background-image: url(../images/bg4.png);
+        background:radial-gradient(rgb(26, 1, 1),rgb(0, 0, 0));
 
         .priceLeft{
             display: flex;
+            width: 100%;
             flex-direction: column;
+            align-items: center;
+            background: #000;
+            color: white;
+            border: 0.5px solid rgb(61, 60, 60);
+            padding-bottom: 2%;
+            border-radius: 12px;
+
+           
+            
 
             .title{
                 background: red;
                 color: white;
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
+
+                padding: 3%;
+                font-weight: bold;
+                text-align: center;
+                 
+                h1{
+                    font-size: 32px;
+                    text-transform: uppercase;
+                }
+              
             }
+
+            .lastPrice{
+                font-size: 32px;
+                font-weight: 900;
+            }
+            .newPrice{
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            .priceItems{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 2%;
+
+                .Item{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                }
+            }
+
+
+            .countdown-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 3%;
+                font-family: monospace; // Pour un espacement uniforme des caractères
+              
+                .time-values {
+                  display: flex;
+                  color: red;
+                  justify-content: center;
+                  gap: 10px; // Espacement entre les valeurs
+                  font-size: 2em; // Taille de la police pour les valeurs
+                }
+              
+                .time-labels {
+                  display: flex;
+                  justify-content: center;
+                  gap: 15px; // Espacement entre les labels
+                  font-size: 1.1em; // Taille de la police pour les labels
+                  text-transform: uppercase; // Labels en majuscules
+                  margin-top: 5px; // Espacement entre les valeurs et les labels
+                }
+              }
+        }
+
+        .priceRight{
+            
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            justify-content: center;
+
+          .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            background:radial-gradient(rgb(19, 18, 18),rgba(46, 46, 46, 0.596));
+            padding: 4%;
+            width: 100%;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            .certification{
+                width: 200px;
+                height: 200px;
+
+            }
+
+            h1{
+                font-size: 32px;
+                text-transform: uppercase;
+            }
+          }
+
+           
         }
     }
 
@@ -880,6 +986,8 @@ main{
      
      
      .objectif{
+        
+        padding-bottom: 40%;
         h1{
             font-size: 32px;
             text-align: center;
@@ -915,7 +1023,37 @@ main{
      .bonus__container{
         width: 100% !important;
      }
+      
 
+     .portfolio,.moduleFormations,.bonus,.temoignage{
+        
+        padding-bottom: 40%;
+     }
+
+     .price{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        padding: 0 4%;
+        padding-bottom: 20%;
+
+        .priceLeft{
+            .title{
+               h1{
+                font-size: 24px;
+               }
+            }
+
+            .lastPrice{
+                font-size: 32px;
+            }
+
+            .newPrice{
+                font-size: 50px;
+            }
+        }
+     }
      
 
     .cible{
@@ -953,22 +1091,6 @@ main{
     }
 
 
-    .payCartMobile{
-        display: flex;
-        flex-direction: column;
-        padding: 10px 20px;
-        border-radius: 10px;
-        background: #f07807;
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-    
-        .preview{
-            width: 96%;
-        }
-                
-    }
 
     .plus{
         

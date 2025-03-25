@@ -15,6 +15,7 @@ import Notifications from "./component/notification";
 // import BtnPay from "./component/payement";
 import Book from "../images/book.png"
 import videoIcon from "../images/videoIcon.png"
+import certification from "../images/certificatio.png"
 import fileIcon from "../images/fileIcon.png"
 // import Pack from "../images/pack.jpg"
 import reseauIcon from "../images/reseauIcon.png"
@@ -23,6 +24,7 @@ import Bonus from "../images/bonus.png"
 import MyComponent from "./component/bd";
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 // import { BentoGrid } from "./component/ui/bendo-grid";
 import BentoGridDemo from "./payement/page";
@@ -32,6 +34,7 @@ import StarsIcon from '@mui/icons-material/Stars';
 import ModulesFormations from "./component/modules";
 import { AnimatedTestimonials } from "./component/temoignage";
 import { testimonials } from "./component/bd/temoigne";
+import Countdown from "./component/countDown";
 
 
 export default function Home() {
@@ -346,23 +349,70 @@ export default function Home() {
       <div className="priceLeft">
          <div className="title">
           <h1>Rejoind la formation Maintenant</h1>
+          <h2>Le combo complet complet pour faire de toi un pro</h2>
          </div>
 
-         <span className="price"><s>75 000 XAF</s></span>
+         <span className="lastPrice"><s>75 000 XAF</s></span>
          <span className="newPrice">8500 XAF</span>
          <div className="priceItems">
             <span className="Item">
-              <span></span>
-              <span></span>
+              <span><CheckCircleRoundedIcon/></span>
+              <span>Programme d&apos;accompagnement en ligne</span>
             </span>
+
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>Développe une compétence monétisable</span>
+            </span>
+           
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>+20 Heures de vidéos à suivre a ton rythme</span>
+            </span>
+
+
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>+40 Chapitre repartie en 7 modules</span>
+            </span>
+
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>Rejoins la communauté des miniamaker sur Telegram</span>
+            </span>
+            
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>+ Un tuto de plus au cas pratique chaque mois</span>
+            </span>
+
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>Mon pack de brushes & Assets</span>
+            </span>
+
+            <span className="Item">
+              <span><CheckCircleRoundedIcon/></span>
+              <span>+ Des exercices de miniatures à réaliser</span>
+            </span>
+
          </div>
+        
+         <BtnPay texte="Je veux la formation"/>
 
-
+         <div>
+         <Countdown initialTime={24 * 3600 + 13 * 3600 + 12 * 60 + 60} />
+         </div>
 
       </div>
 
       <div className="priceRight">
-        
+       <div className="container">
+       <Image src={certification} alt="" className="certification"/>
+        <h1>Garentie</h1>
+
+        <p>Si après avoir suivi l'intégralité de la formation et appliqué toutes les étapes, tu ne parviens pas à créer des miniatures professionnelles et captivantes qui augmentent ton taux de clic, je te rembourse intégralement. Ta réussite est ma priorité !</p>
+       </div>
       </div>
      </section>
 
