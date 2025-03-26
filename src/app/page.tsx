@@ -6,7 +6,7 @@ import logo from "../images/logoo.png";
 
 import Link from 'next/link';
 import ReactPlayer from "react-player";
-import Notifications from "./component/notification";
+// import Notifications from "./component/notification";
 
 import Book from "../images/book.png"
 import videoIcon from "../images/videoIcon.png"
@@ -327,9 +327,9 @@ export default function Home() {
      </section>
 
 
-     <section className="notif">
+     {/* <section className="notif">
           <Notifications/>
-     </section>
+     </section> */}
 
      <section className="footer">
      <Image src={logo} alt="logo" className="logo" width={0} height={0}/>
