@@ -35,9 +35,11 @@
     .titre{
       display: flex;
       flex-direction: column;
+      width: 120%;
       .t{
         color: white;
         font-weight: bold;
+        width: 100%;
       }
 
       
@@ -48,6 +50,7 @@
     font-size: 0.8em;
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 5px;
     
 
@@ -74,7 +77,18 @@
    justify-content: space-between;
    align-items: center;
   
-   
+   .Items{
+    display: 	flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center;
+
+    .moduleImage{
+      width: 90px;
+      height: 60px;
+      border-radius: 12px;
+    }
+   }
   
   }
 }
@@ -184,12 +198,18 @@
 
   @media (max-width: 480px) {
 
+    
+
     .titre__content{
       .number{
        padding: 0.5% 2%;
         font-size: 14px;
+        
       }
+
+      
     }
+    
 
     .faq__Group{
       width: 110%;
