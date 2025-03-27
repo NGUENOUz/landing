@@ -22,7 +22,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
-import BentoGridDemo from "./payement/page";
+// import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
 import { ContainerScroll } from "./component/ui/container-scrool-animation";
 import StarsIcon from '@mui/icons-material/Stars';
@@ -189,10 +189,10 @@ export default function Home() {
       </section>
 
 
-      <section className="portfolio">
+      {/* <section className="portfolio">
          <BentoGridDemo/>
          <BtnPay texte="Je veux la formation"/>
-      </section>
+      </section> */}
 
       
       <section className="modules">
