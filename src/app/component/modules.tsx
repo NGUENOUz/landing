@@ -71,7 +71,7 @@ export default function ModulesFormations() {
                 <li><b>Travail collaboratif :</b>Commentaires, suivi des modifications, partage de documents</li>
                 <li><b>Table des matières et références :</b> Insertion automatique de sommaires, notes de bas de page, citations</li>
                 <li><b>Automatisation avec les macros :</b>  Gagnez du temps en automatisant des tâches répétitives</li>
-                <li><b>Sécurité et protection des documents :</b>  Protection par mot de passe, gestion des droits d'accès
+                <li><b>Sécurité et protection des documents :</b>  Protection par mot de passe, gestion des droits d&apos;accès
 
 </li>
        

@@ -35,7 +35,7 @@ export default function Faq() {
         >
           <Typography component="span" className='titre__content'>
             <span className='titre'>
-              <span className='t'>Après le paiement, comment j'accède au pack de formations ?</span>
+              <span className='t'>Après le paiement, comment j&apos;accède au pack de formations ?</span>
              
             </span>
            
@@ -44,7 +44,7 @@ export default function Faq() {
         <AccordionDetails>
           <Typography className='faq__description'>
           <span>
-								Après votre paiement vous recevrez instantanément et de facon automatique dans votre boite mail, un message de 🏆 Félicitations avec un lien à l'interieur. Il vous suffira simplement de cliquer sur ce lien pour accéder à votre dossier de formation et commencer à vous former.
+								Après votre paiement vous recevrez instantanément et de facon automatique dans votre boite mail, un message de 🏆 Félicitations avec un lien à l&apos;interieur. Il vous suffira simplement de cliquer sur ce lien pour accéder à votre dossier de formation et commencer à vous former.
 							</span>
           
        
@@ -83,7 +83,7 @@ export default function Faq() {
                 <br/>
                 <br/>
                 
-								Vous pouvez suivre vos formations à tout moment et depuis n'importe quel appareil "Telephone , ordinateur , tablet ..."								 </span>
+								Vous pouvez suivre vos formations à tout moment et depuis n&apos;importe quel appareil &quot;Telephone , ordinateur , tablet ...&quot;								 </span>
          
       
          </Typography>
@@ -182,7 +182,7 @@ export default function Faq() {
          <span>
                
         
-         Oui vous le pouvez car cette formation est accessible à vie et depuis n'importe quel appareil ça veut dire que vous pouvez payer aujourd'hui et même vous former dans 06 mois selon votre disponibilité et à votre rythme que vous soyez sur ordinateur tablette ou téléphone. 
+         Oui vous le pouvez car cette formation est accessible à vie et depuis n&apos;importe quel appareil ça veut dire que vous pouvez payer aujourd&apos;hui et même vous former dans 06 mois selon votre disponibilité et à votre rythme que vous soyez sur ordinateur tablette ou téléphone. 
 							
              
              </span>

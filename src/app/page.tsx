@@ -8,7 +8,7 @@ import Link from 'next/link';
 import ReactPlayer from "react-player";
 // import Notifications from "./component/notification";
 
-import Book from "../images/book.png"
+import Book from "../images/books.png"
 import videoIcon from "../images/videoIcon.png"
 import certification from "../images/certificatio.png"
 import fileIcon from "../images/fileIcon.png"
@@ -225,12 +225,12 @@ export default function Home() {
 
           <span className="bonusItem">
           <span className="bunusIcon"><StarsIcon/></span>
-            <span>Plus de 1000 livres audio couvrant des sujets tels que l'entrepreneuriat, le développement personnel, la spiritualité et plus encore</span>
+            <span>Plus de 1000 livres audio couvrant des sujets tels que l&apos;entrepreneuriat, le développement personnel, la spiritualité et plus encore</span>
           </span>
 
           <span className="bonusItem">
             <span className="bunusIcon"><StarsIcon/></span>
-            <span>Vous aurez accès à un groupe privé d'hommes issus de la formation, avec qui vous pourrez nouer des relations, évoluer dans le monde professionnel, travailler ensemble sur des projets et bien plus encore.</span>
+            <span>Vous aurez accès à un groupe privé d&apos;hommes issus de la formation, avec qui vous pourrez nouer des relations, évoluer dans le monde professionnel, travailler ensemble sur des projets et bien plus encore.</span>
           </span>
 
           
