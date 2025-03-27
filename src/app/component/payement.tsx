@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import { TextGenerateEffect } from './loader';
+
 
 interface BtnProps {
   texte: string;
@@ -24,8 +24,8 @@ export default function BtnPay({ texte, className }: BtnProps) {
     const AMOUNT = 1500;
     const SHOP_NAME = 'Dreno/Formation Excel';
     const MESSAGE = 'Achat effectuer avec succes';
-    const SUCCESS_URL = 'https://www.linkedin.com/in/wilfrieddzomeu/';
-    const FAILURE_URL = 'https://nextjs.org/docs';
+    const SUCCESS_URL = 'https://drive.google.com/drive/folders/1BGGZuIOO_SGc58bFAz89UDggz3yypZXq';
+    const FAILURE_URL = './';
     const ORDER_ID = uuidv4();
 
     const payload = {
@@ -66,11 +66,7 @@ export default function BtnPay({ texte, className }: BtnProps) {
                 <ArrowRightIcon  className="icon"/>
           </span>
       </button>
-      {loading && (
-        <div className='loader-overlay'> {/* Utilisez les styles du loader si vous en avez */}
-          <TextGenerateEffect words='chargement...'/>
-        </div>
-      )}
+     
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
