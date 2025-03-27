@@ -17,7 +17,7 @@ import reseauIcon from "../images/reseauIcon.png"
 import settingIcon from "../images/settingIcon.png"
 import Bonus from "../images/bonus.png"
 import MyComponent from "./component/bd";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+// import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
@@ -31,9 +31,16 @@ import { AnimatedTestimonials } from "./component/temoignage";
 import { testimonials } from "./component/bd/temoigne";
 import Countdown from "./component/countDown";
 import Faq from "./component/faq";
+import dynamic from 'next/dynamic';
+
+const PixelInitializer = dynamic(() => import('../app/lib/usePixel'), { ssr: false });
+
 
 
 export default function Home() {
+
+
+ 
   return (
     <main>
       
@@ -46,18 +53,16 @@ export default function Home() {
 
         <nav>
           <ul>
-            <Link href=""className="link">Nos formations</Link>
-            <Link href="" className="link">Qui sommes nous</Link>
-            <Link href=""className="link">Se connecter</Link>
+            <Link href="#Modules"className="link">Les Modules</Link>
+            <Link href="#Demo" className="link">Voir la Demo</Link>
+            <Link href="#Bonus"className="link">Nos Bonus</Link>
           </ul>
         </nav>
 
-        <button className="btn-one btn-gra">
-          <span>Acceder aux formations</span>
-          <span>
-                <ArrowRightIcon  className="icon"/>
-          </span>
-        </button>
+        
+        <BtnPay texte="Acceder à la formation"/>
+          
+          
       </header>
 
       <div className="acceuil__container">
@@ -68,10 +73,10 @@ export default function Home() {
         </h1>
 
         <div className="btn__container">
-          <button className="btn btn-one"><span>Voir le programme</span> 
+          <button className="btn btn-one" ><Link href="#Modules"className="link">Voir Le programme </Link>
             <span><ArrowDropDownIcon  className="icon"/></span>
           </button>
-          <button className="btn btn2">Exemples concrets</button>
+          <button className="btn btn2"> <Link href="#Demo" className="link">Exemples concrets</Link></button>
         </div>
         <span className="chiffre">Plus de 300 000 Africains ont déjà suivi cette formation avec succès !</span>
       </div>
@@ -131,7 +136,7 @@ export default function Home() {
        
       </section>
 
-      <section className="demoVideo">
+      <section className="demoVideo" id="Demo">
       
         <ContainerScroll titleComponent={<h1>La <span className="tips">Demo</span> de la formation</h1>}>
         
@@ -199,7 +204,7 @@ export default function Home() {
 
       </section>
 
-     <section className="moduleFormations">
+     <section className="moduleFormations" id="Modules">
      
 
      <h1>les <span className="tips">Modules</span> de la  formation</h1>
@@ -211,7 +216,7 @@ export default function Home() {
         </div>
      </section>
 
-     <section className="bonus">
+     <section className="bonus" id="Bonus">
 
        <div className="bonus__container">
           <Image src={Bonus} alt="" className="bonusIcon"/>
@@ -339,6 +344,8 @@ export default function Home() {
         </div>
 
      </section> 
+
+     <PixelInitializer />
     </main>
   );
 }

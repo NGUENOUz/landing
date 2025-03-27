@@ -25,7 +25,7 @@ export default function BtnPay({ texte, className }: BtnProps) {
     const SHOP_NAME = 'Dreno/Formation Excel';
     const MESSAGE = 'Achat effectuer avec succes';
     const SUCCESS_URL = 'https://drive.google.com/drive/folders/1BGGZuIOO_SGc58bFAz89UDggz3yypZXq';
-    const FAILURE_URL = './';
+    let FAILURE_URL = '';
     const ORDER_ID = uuidv4();
 
     const payload = {
@@ -40,6 +40,7 @@ export default function BtnPay({ texte, className }: BtnProps) {
     try {
       const response = await axios.post('/api/lygosProxy', payload);
       window.location.href = response.data.link;
+      FAILURE_URL = response.data.link;
     } catch (err: unknown) {
       if (err instanceof Error) {
         setError(err.message);
@@ -66,7 +67,7 @@ export default function BtnPay({ texte, className }: BtnProps) {
                 <ArrowRightIcon  className="icon"/>
           </span>
       </button>
-     
+   
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
