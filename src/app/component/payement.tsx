@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
+
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { TextGenerateEffect } from './loader';
 
 interface BtnProps {
   texte: string;
@@ -64,6 +66,11 @@ export default function BtnPay({ texte, className }: BtnProps) {
                 <ArrowRightIcon  className="icon"/>
           </span>
       </button>
+      {loading && (
+        <div className='loader-overlay'> {/* Utilisez les styles du loader si vous en avez */}
+          <TextGenerateEffect words='chargement...'/>
+        </div>
+      )}
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
