@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
 
       {
         protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '**', // Allow all paths under this hostname
+      },
+
+      {
+        protocol: 'https',
         hostname: 'pbs.twimg.com',
         pathname: '**', // Autoriser tous les chemins sous ce nom d'hôte
       },

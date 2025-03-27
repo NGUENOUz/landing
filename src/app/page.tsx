@@ -64,7 +64,7 @@ export default function Home() {
         <span className="sous__title"><span className="asterice">*</span>Formation 100% pratique<span className="asterice">*</span></span>
 
         <h1>
-            Devenez <span className="tips">un expert </span>des outils bureautiques et <span className="tips">boostez</span>votre carrière !
+            Devenez <span className="tips">un expert </span>des outils bureautiques et <span className="tips">boostez </span>votre carrière !
         </h1>
 
         <div className="btn__container">
