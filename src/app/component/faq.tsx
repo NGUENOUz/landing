@@ -44,7 +44,7 @@ export default function Faq() {
         <AccordionDetails>
           <Typography className='faq__description'>
           <span>
-								Après votre paiement vous recevrez instantanément et de facon automatique dans votre boite mail, un message de 🏆 Félicitations avec un lien à l&apos;interieur. Il vous suffira simplement de cliquer sur ce lien pour accéder à votre dossier de formation et commencer à vous former.
+								Après votre paiement vous allez etre authomatiquement diriger vers la page des formations , que vous pouriez suivre hors ligne en telechargeant les vidéos .
 							</span>
           
        

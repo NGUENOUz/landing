@@ -144,7 +144,7 @@ export default function Home() {
            <div className="video__container">
                       
                             <ReactPlayer
-                              url="https://vimeo.com/1070162920/c94e5063fd?share=copy"
+                              url="https://youtu.be/hRB7FzzZ8ZU"
                               controls // Affiche les contrôles de lecture
                                 // Hauteur de la vidéo
                   
