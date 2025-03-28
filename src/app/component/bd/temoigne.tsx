@@ -2,21 +2,21 @@
 
 export const testimonials = [
     {
-      quote: 'This product is amazing! It changed my life.',
-      name: 'Alice Johnson',
-      designation: 'Software Engineer',
-      src: 'https://d1yei2z3i6k35z.cloudfront.net/1970629/67b9cc471cdde_KendrickLamarsuperBowlV5.jpg',
+      quote: " Les modules sont clairs et faciles à suivre. Même si je n'étais pas très à l'aise avec l'informatique, j'ai tout compris. C'est une formation accessible à tous" ,
+      name: 'Aminata',
+      designation: '-Abidjan',
+      src: 'https://res.cloudinary.com/dsf8rehsq/image/upload/v1743123731/453971114_122105170694441886_8376043783607336378_n_ra1zlh.jpg',
     },
     {
-      quote: 'I highly recommend this service. It\'s very efficient.',
+      quote: "Grâce à cette formation, j'ai pu décrocher un emploi dans une entreprise internationale. Mes compétences en bureautique ont fait la différence. C'est un vrai tremplin pour ma carrière .",
       name: 'Bob Williams',
-      designation: 'Marketing Manager',
-      src: 'https://d1yei2z3i6k35z.cloudfront.net/1970629/67b9cd67b7cf9_7erreursaeviterb.jpg',
+      designation: 'Libreville-Gabon',
+      src: 'https://res.cloudinary.com/dsf8rehsq/image/upload/v1743123024/441392115_3671356123082819_2394370501306091120_n_wb3b3t.jpg',
     },
     {
-      quote: 'The support team is fantastic. They helped me solve all my issues.',
-      name: 'Charlie Brown',
-      designation: 'Customer Support',
-      src: 'https://d1yei2z3i6k35z.cloudfront.net/1970629/67b1aaa1b66c5_Jour910pro.jpg',
+      quote:"Avant, je passais des heures sur des tâches bureautiques banales. Cette formation m'a donné les raccourcis et les astuces pour être plus efficace. J'ai gagné un temps précieux",
+      name: 'Madame Mireille',
+      designation: 'Yaounde-Cameroun',
+      src: 'https://res.cloudinary.com/dsf8rehsq/image/upload/v1743123024/473742761_1296411424735148_7557157568522313927_n_nlhegk.jpg',
     },
   ];

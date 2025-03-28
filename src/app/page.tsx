@@ -33,6 +33,7 @@ import Countdown from "./component/countDown";
 import Faq from "./component/faq";
 import dynamic from 'next/dynamic';
 
+
 const PixelInitializer = dynamic(() => import('../app/lib/usePixel'), { ssr: false });
 
 
@@ -143,7 +144,7 @@ export default function Home() {
            <div className="video__container">
                       
                             <ReactPlayer
-                              url="https://youtu.be/PrqVcCSIVdk?si=kh3r1ZyP-a2uvNiP"
+                              url="https://vimeo.com/1070162920/c94e5063fd?share=copy"
                               controls // Affiche les contrôles de lecture
                                 // Hauteur de la vidéo
                   
