@@ -8,7 +8,7 @@ import Link from "next/link";
 import ReactPlayer from "react-player";
 // import Notifications from "./component/notification";
 
-import Book from "../images/books.png";
+import Book from "../images/lere.png";
 import videoIcon from "../images/videoIcon.png";
 import certification from "../images/certificatio.png";
 import fileIcon from "../images/fileIcon.png";
@@ -85,7 +85,7 @@ export default function Home() {
             </button>
             <button className="btn btn2">
               {" "}
-              <Link href="#Demo" className="link">
+              <Link href="#price" className="link">
                 Profiter de l&apos;offre
               </Link>
             </button>
@@ -225,7 +225,7 @@ export default function Home() {
 
       <section className="objectif">
         <h1>
-          Deviens <span className="tips">un pro</span> sur Office !
+          Deviens <span className="tips">un pro</span> des IA !
         </h1>
 
         <h2>
@@ -339,7 +339,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="price">
+      <section className="price" id="price">
         <div className="priceLeft">
           <div className="title">
             <h1>Rejoind la formation Maintenant</h1>
