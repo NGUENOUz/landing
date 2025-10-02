@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Deviens un expert en génération d'images et apprend à monétiser cette compétence",
 
   icons: {
-    icon: "./DrenoIco.png", // Chemin vers votre fichier favicon
+    icon: "./lere.png", // Chemin vers votre fichier favicon
   },
 };
 
