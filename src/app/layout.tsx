@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
-
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "Formation pratique en burautique",
-  description: "Devenez un expert des outils bureautiques et boostez votre carrière",
+  title: "Formation pratique sur la génération d'image avec L'IA",
+  description:
+    "Deviens un expert en génération d'images et apprend à monétiser cette compétence",
 
   icons: {
-    icon: './DrenoIco.png', // Chemin vers votre fichier favicon
+    icon: "./DrenoIco.png", // Chemin vers votre fichier favicon
   },
 };
 
@@ -17,15 +17,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
- 
-
   return (
-    
     <html lang="en">
-      <body >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
