@@ -27,7 +27,7 @@ export default function WhatsappExitPopup() {
           setVisible(true);
           setHasShown(true);
         }
-      }, 20000);
+      }, 40000);
       return () => clearTimeout(timer);
     }
   }, [hasShown, isMobile]);
