@@ -5,7 +5,7 @@ import "../style/layout.scss";
 import logo from "../images/logoo.png";
 
 import Link from "next/link";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 // import Notifications from "./component/notification";
 
 import Book from "../images/lere.png";
@@ -23,7 +23,7 @@ import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
 // import BentoGridDemo from "./payement/page";
 import BtnPay from "./component/payement";
-import { ContainerScroll } from "./component/ui/container-scrool-animation";
+// import { ContainerScroll } from "./component/ui/container-scrool-animation";
 import StarsIcon from "@mui/icons-material/Stars";
 import ModulesFormations from "./component/modules";
 import { AnimatedTestimonials } from "./component/temoignage";
@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <main>
       <section className="Acceuil">
-        <header>
+        {/* <header>
           <span>
             <Image src={logo} alt="logo" className="logo" />
           </span>
@@ -59,8 +59,13 @@ export default function Home() {
             </ul>
           </nav>
 
-          <BtnPay texte="Acceder à la formation" />
-        </header>
+          <button className="btn btn-one">
+            {" "}
+            <Link href="#price" className="link">
+              Profiter de l&apos;offre
+            </Link>
+          </button>
+        </header> */}
 
         <div className="acceuil__container">
           <span className="sous__title">
@@ -83,12 +88,20 @@ export default function Home() {
                 <ArrowDropDownIcon className="icon" />
               </span>
             </button>
-            <button className="btn btn2">
+
+            <span className="promo">
+              <span className="titlePrice">Prix : </span>
+              <span className="offer">
+                <span className="actuelPrice">7500 FCFA (~12$)</span>
+                <span className="lastPrice">25 000 XAF</span>
+              </span>
+            </span>
+            {/* <button className="btn btn2">
               {" "}
               <Link href="#price" className="link">
                 Profiter de l&apos;offre
               </Link>
-            </button>
+            </button> */}
           </div>
           <span className="chiffre">
             Plus de 52 000 personnes me suivent sur ma page et profitent de mes
@@ -203,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="demoVideo" id="Demo">
+      {/* <section className="demoVideo" id="Demo">
         <ContainerScroll
           titleComponent={
             <h1>
@@ -221,7 +234,7 @@ export default function Home() {
             />
           </div>
         </ContainerScroll>
-      </section>
+      </section> */}
 
       <section className="objectif">
         <h1>
@@ -264,7 +277,14 @@ export default function Home() {
           </div>
         </div>
 
-        <BtnPay texte="Je veux la formation" />
+        <button className="btn btn-one">
+          <Link href="#price" className="link">
+            Profiter de l&apos;offre{" "}
+          </Link>
+          <span>
+            <ArrowDropDownIcon className="icon" />
+          </span>
+        </button>
       </section>
 
       {/* <section className="portfolio">
@@ -284,7 +304,14 @@ export default function Home() {
         </h2>
         <div className="faq__container">
           <ModulesFormations />
-          <BtnPay texte="Je veux la formation" />
+          <button className="btn btn-one">
+            <Link href="#price" className="link">
+              Profiter de l&apos;offre{" "}
+            </Link>
+            <span>
+              <ArrowDropDownIcon className="icon" />
+            </span>
+          </button>
         </div>
       </section>
 
@@ -323,19 +350,14 @@ export default function Home() {
               </span>
             </span>
           </div>
-          <BtnPay texte="Je veux la formation" />
-        </div>
-      </section>
-
-      <section className="temoignage">
-        <h1>Temoignage</h1>
-        <h2>
-          <span className="asterice">* </span>Ecoute ce que les autres disent de
-          cette formation<span className="asterice">*</span>{" "}
-        </h2>
-
-        <div className="temoignage__container">
-          <AnimatedTestimonials testimonials={testimonials} autoplay={false} />
+          <button className="btn btn-one">
+            <Link href="#Modules" className="link">
+              Profiter de l&apos;offre{" "}
+            </Link>
+            <span>
+              <ArrowDropDownIcon className="icon" />
+            </span>
+          </button>
         </div>
       </section>
 
@@ -406,7 +428,7 @@ export default function Home() {
             </span>
           </div>
 
-          <BtnPay texte="Je veux la formation" />
+          <BtnPay texte="Acheter maintenant" />
 
           <div>
             <Countdown initialTime={24 * 3600 + 13 * 3600 + 12 * 60 + 60} />
@@ -425,6 +447,18 @@ export default function Home() {
               est notre priorité !
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="temoignage">
+        <h1>Temoignage</h1>
+        <h2>
+          <span className="asterice">* </span>Ecoute ce que les autres disent de
+          cette formation<span className="asterice">*</span>{" "}
+        </h2>
+
+        <div className="temoignage__container">
+          <AnimatedTestimonials testimonials={testimonials} autoplay={false} />
         </div>
       </section>
 

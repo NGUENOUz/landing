@@ -225,6 +225,35 @@ main {
     background: #000;
   }
 
+  .promo {
+    border: 0.5px dotted white;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5% 2%;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    gap: 10%;
+    .TitlePrice {
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+    }
+    .offer {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      .r {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .lastPrice {
+        color: white;
+        text-decoration: line-through;
+      }
+    }
+  }
+
   .demo {
     padding: 5% 8%;
     height: auto;
@@ -766,8 +795,10 @@ main {
         }
 
         .btn__container {
-          .btn2 {
-            display: none;
+          display: flex;
+          flex-direction: column-reverse;
+          .promo {
+            width: 70%;
           }
         }
       }
