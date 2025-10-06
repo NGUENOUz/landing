@@ -6,7 +6,7 @@ import logo from "../images/logoo.png";
 
 import Link from "next/link";
 // import ReactPlayer from "react-player";
-// import Notifications from "./component/notification";
+// import Notifications from './component/notification';
 
 import Book from "../images/lere.png";
 import videoIcon from "../images/videoIcon.png";
@@ -31,6 +31,8 @@ import { testimonials } from "./component/bd/temoigne";
 import Countdown from "./component/countDown";
 import Faq from "./component/faq";
 import dynamic from "next/dynamic";
+import WhatsappExitPopup from "./component/whatsappRelance";
+
 
 const PixelInitializer = dynamic(() => import("../app/lib/usePixel"), {
   ssr: false,
@@ -483,6 +485,7 @@ export default function Home() {
       </section>
 
       <PixelInitializer />
+      <WhatsappExitPopup />
     </main>
   );
 }
