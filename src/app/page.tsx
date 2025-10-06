@@ -82,8 +82,8 @@ export default function Home() {
 
           <div className="btn__container">
             <button className="btn btn-one">
-              <Link href="#Modules" className="link">
-                Voir Le programme{" "}
+              <Link href="#price" className="link">
+                Profiter de l&apos;offre{" "}
               </Link>
               <span>
                 <ArrowDropDownIcon className="icon" />
