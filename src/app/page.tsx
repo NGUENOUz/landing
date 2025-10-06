@@ -33,7 +33,6 @@ import Faq from "./component/faq";
 import dynamic from "next/dynamic";
 import WhatsappExitPopup from "./component/whatsappRelance";
 
-
 const PixelInitializer = dynamic(() => import("../app/lib/usePixel"), {
   ssr: false,
 });
@@ -353,7 +352,7 @@ export default function Home() {
             </span>
           </div>
           <button className="btn btn-one">
-            <Link href="#Modules" className="link">
+            <Link href="#price" className="link">
               Profiter de l&apos;offre{" "}
             </Link>
             <span>
